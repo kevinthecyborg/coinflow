@@ -9,116 +9,62 @@
     {{> partials/modals}}
 
     <!-- NAVBAR -->
-    {{> partials/navbar classList="navbar-light bg-white" container="container" button="primary"}}
+    {{> partials/navbar classList="navbar-dark" container="container" button="primary"}}
 
     <!-- WELCOME -->
-    <section class="pt-4 pt-md-11">
+    <section class="mt-n11 pt-12 pb-8 pt-md-14 pb-md-11 bg-black">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-2">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 text-center">
 
-            <!-- Image -->
-            <img src="assets/img/illustrations/illustration-2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
-
-          </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
-
-            <!-- Heading -->
-            <h1 class="display-3 text-center text-md-start">
-              Welcome to <span class="text-primary">Landkit</span>. <br>
-              Develop anything.
+            <!-- Headin -->
+            <h1 class="display-1 fw-bold text-white" data-aos="fade-up" data-aos-delay="50">
+              Proven, consistent cryptocurrency alerts.
             </h1>
 
             <!-- Text -->
-            <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
-              Build a beautiful, modern website with flexible Bootstrap components built from scratch.
+            <p class="lead text-gray-500 mb-6 mx-auto" data-aos="fade-up" data-aos-delay="100" style="max-width: 500px;">
+              Coinflow is an easy-to-use set of alerts to help maximize profits in crypto trading.
             </p>
 
-            <!-- Buttons -->
-            <div class="text-center text-md-start">
-              <a href="overview.html" class="btn btn-primary shadow lift me-1">
-                View all pages <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
+            <!-- Button -->
+            <p class="mb-7 mb-md-9" data-aos="fade-up" data-aos-delay="150">
+              <a class="btn btn-primary shadow lift" href="#!">
+                Get started free <i class="fe fe-arrow-right ms-3"></i>
               </a>
-              <a href="docs/index.html" class="btn btn-primary-soft lift">
-                Documentation
-              </a>
-            </div>
+            </p>
 
           </div>
         </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- FEATURES -->
-    <section class="py-8 py-md-11 border-bottom">
-      <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4" data-aos="fade-up">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
 
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              {{> general/settings-1}}
+            <!-- Media -->
+            <div class="position-relative pt-7 pb-7 ps-7 mb-7 mb-md-9 rounded-4 shadow-multicolor overflow-hidden">
+
+              <!-- Background -->
+              <div class="position-absolute top-0 end-0 bottom-0 start-0 bg-gradient-multicolor"></div>
+
+              <!-- Image -->
+              <img class="position-relative img-fluid rounded-start shadow-lg" src="assets/img/screenshots/desktop/dashkit-alt.jpg" alt="..." />
+
             </div>
-
-            <!-- Heading -->
-            <h3>
-              Built for developers
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-6 mb-md-0">
-              Landkit is built to make your life easier. Variables, build tooling, documentation, and reusable components.
-            </p>
-
-          </div>
-          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
-
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              {{> layout/layout-arrange}}
-            </div>
-
-            <!-- Heading -->
-            <h3>
-              Designed to be modern
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-6 mb-md-0">
-              Designed with the latest design trends in mind. Landkit feels modern, minimal, and beautiful.
-            </p>
-
-          </div>
-          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
-
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              {{> code/code}}
-            </div>
-
-            <!-- Heading -->
-            <h3>
-              Documentation for everything
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-0">
-              We've written extensive documentation for components and tools, so you never have to reverse engineer anything.
-            </p>
 
           </div>
         </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- BRANDS -->
-    <section class="py-6 py-md-8 border-bottom">
-      <div class="container">
         <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-center text-primary mb-6">
+              Works for popular exchanges
+            </h6>
+
+          </div>
           <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
 
             <!-- Brand -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+            <div class="img-fluid text-white mb-2 mb-md-0 svg-shim">
               {{> logotype/airbnb}}
             </div>
 
@@ -126,7 +72,7 @@
           <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
 
             <!-- Brand -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+            <div class="img-fluid text-white mb-2 mb-md-0 svg-shim">
               {{> logotype/coinbase}}
             </div>
 
@@ -134,7 +80,7 @@
           <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
 
             <!-- Brand -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+            <div class="img-fluid text-white mb-2 mb-md-0 svg-shim">
               {{> logotype/dribbble}}
             </div>
 
@@ -142,768 +88,9 @@
           <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
 
             <!-- Brand -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+            <div class="img-fluid text-white mb-2 mb-md-0 svg-shim">
               {{> logotype/instagram}}
             </div>
-
-          </div>
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-
-            <!-- Brand -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-              {{> logotype/netflix}}
-            </div>
-
-          </div>
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-
-            <!-- Brand -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-              {{> logotype/pinterest}}
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- ABOUT -->
-    <section class="pt-8 pt-md-11 bg-gradient-light-white">
-      <div class="container">
-        <div class="row align-items-center justify-content-between mb-8 mb-md-11">
-          <div class="col-12 col-md-6 order-md-2" data-aos="fade-left">
-
-            <!-- Heading -->
-            <h2>
-              The most useful resource <br>
-              <span class="text-success">ever created for <span data-typed='{"strings": ["developers.", "founders.", "designers."]}'></span></span>
-            </h2>
-
-            <!-- Text -->
-            <p class="fs-lg text-muted mb-6">
-              Using Landkit to build your site means never worrying about designing another page or cross browser compatibility. Our ever-growing library of components and pre-designed layouts will make your life easier.
-            </p>
-
-            <!-- List -->
-            <div class="row">
-              <div class="col-12 col-lg-6">
-
-                <!-- Item -->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p class="text-success">
-                    Lifetime updates
-                  </p>
-
-                </div>
-
-                <!-- Item -->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <p class="text-success mb-lg-0">
-                    Tons of assets
-                  </p>
-
-                </div>
-
-              </div>
-              <div class="col-12 col-lg-6 mb-6 mb-md-0">
-
-                <!-- Item -->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <span class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </span>
-
-                  <!-- Text -->
-                  <p class="text-success">
-                    Tech support
-                  </p>
-
-                </div>
-
-                <!-- Item -->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle bg-success-soft me-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p class="text-success mb-0">
-                    Integration ready
-                  </p>
-
-                </div>
-
-              </div>
-            </div> <!-- / .row -->
-
-          </div>
-          <div class="col-12 col-md-6 col-lg-5 order-md-1" data-aos="fade-right">
-
-            <!-- Card -->
-            <div class="card shadow-light-lg lift lift-lg">
-
-              <!-- Image -->
-              <img src="assets/img/photos/photo-2.jpg" alt="..." class="card-img-top">
-
-              <!-- Shape -->
-              <div class="position-relative">
-                <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                  {{> curves/curve-1}}
-                </div>
-              </div>
-
-              <!-- Body -->
-              <div class="card-body">
-
-                <!-- Form -->
-                <form>
-                  <div class="form-floating">
-                    <input type="text" class="form-control form-control-flush" id="cardName" placeholder="Name">
-                    <label for="cardName">Name</label>
-                  </div>
-                  <div class="form-floating">
-                    <input type="email" class="form-control form-control-flush" id="cardEmail" placeholder="Email">
-                    <label for="cardEmail">Email</label>
-                  </div>
-                  <div class="form-floating">
-                    <input type="password" class="form-control form-control-flush" id="cardPassword" placeholder="Password">
-                    <label for="cardPassword">Password</label>
-                  </div>
-                  <div class="mt-6">
-                    <button class="btn w-100 btn-success lift" type="submit">
-                      Download a sample
-                    </button>
-                  </div>
-                </form>
-
-              </div>
-
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-        <div class="row align-items-center">
-          <div class="col-12 col-md-7 col-lg-6" data-aos="fade-right">
-
-            <!-- Heading -->
-            <h2>
-              We have lots of experience <br>
-              <span class="text-primary">building Bootstrap themes</span>.
-            </h2>
-
-            <!-- Text -->
-            <p class="fs-lg text-muted mb-6">
-              We've built well over a dozen Bootstrap themes and sold tens of thousands of copies.
-            </p>
-
-            <!-- List -->
-            <div class="d-flex">
-
-              <!-- Icon -->
-              <div class="icon text-primary">
-                {{> media/repeat}}
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="mb-1">
-                  Bootstrap users since the beginning
-                </h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6">
-                  We've been developing with Bootstrap since it was publicly released in 2011.
-                </p>
-
-              </div>
-
-            </div>
-            <div class="d-flex">
-
-              <!-- Icon -->
-              <div class="icon text-primary">
-                {{> code/code}}
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="mb-1">
-                  Deep understanding of Bootstrap
-                </h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6 mb-md-0">
-                  We've watched Bootstrap grow up over the years and understand it better than almost anyone.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-          <div class="col-12 col-md-5 col-lg-6">
-
-            <div class="w-md-150 w-lg-130 position-relative" data-aos="fade-left">
-
-              <!-- Shape -->
-              <div class="shape shape-fluid-y shape-blur-4 svg-shim text-gray-200">
-                {{> blurs/blur-4}}
-              </div>
-
-              <!-- Image -->
-              <div class="img-skewed img-skewed-start">
-
-                <!-- Image -->
-                <img src="assets/img/screenshots/desktop/dashkit.jpg" class="screenshot img-fluid img-skewed-item" alt="...">
-
-              </div>
-
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="pt-10 pt-md-12">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-
-            <!-- Heading -->
-            <h2>
-              Our customers are our biggest fans.
-            </h2>
-
-            <!-- Text -->
-            <p class="fs-lg text-muted mb-7 mb-md-9">
-              We don't like to brag, but we don't mind letting our customers do it for us. Here are a few nice things folks have said about our themes over the years.
-            </p>
-
-          </div>
-        </div> <!-- / .row -->
-        <div class="row">
-          <div class="col-12">
-
-            <!-- Card -->
-            <div class="card card-row shadow-light-lg mb-6">
-              <div class="row gx-0">
-                <div class="col-12 col-md-6">
-
-                  <!-- Slider -->
-                  <div class="card-img-slider" data-flickity='{"fade": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "asNavFor": "#blogSlider", "draggable": false}'>
-                    <a class="card-img-start w-100 bg-cover" style="background-image: url(assets/img/photos/photo-1.jpg);" href="#!">
-
-                      <!-- Image (placeholder) -->
-                      <img src="assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
-
-                    </a>
-                    <a class="card-img-start w-100 bg-cover" style="background-image: url(assets/img/photos/photo-26.jpg);" href="#!">
-
-                      <!-- Image (placeholder) -->
-                      <img src="assets/img/photos/photo-26.jpg" alt="..." class="img-fluid d-md-none invisible">
-
-                    </a>
-                  </div>
-
-                  <!-- Shape -->
-                  <div class="shape shape-end shape-fluid-y svg-shim text-white d-none d-md-block">
-                    {{> curves/curve-4}}
-                  </div>
-
-                </div>
-                <div class="col-12 col-md-6 position-md-static">
-
-                  <!-- Slider -->
-                  <div class="position-md-static" data-flickity='{"wrapAround": true, "pageDots": false, "adaptiveHeight": true}' id="blogSlider">
-                    <div class="w-100">
-
-                      <!-- Body -->
-                      <div class="card-body">
-                        <blockquote class="blockquote text-center mb-0">
-
-                          <!-- Brand -->
-                          <div class="row justify-content-center mb-5 mb-md-7">
-                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
-
-                              <!-- Logo -->
-                              <div class="img-fluid svg-shim" style="color: #FF5A5F;">
-                                {{> logotype/airbnb}}
-                              </div>
-
-                            </div>
-                          </div> <!-- / .row -->
-
-                          <!-- Text -->
-                          <p class="mb-5 mb-md-7">
-                            “Landkit is hands down the most useful front end Bootstrap theme I've ever used. I can't wait to use it again for my next project.”
-                          </p>
-
-                          <!-- Footer -->
-                          <footer class="blockquote-footer">
-                            <span class="h6 text-uppercase">Dave Gamache</span>
-                          </footer>
-
-                        </blockquote>
-                      </div>
-
-                    </div>
-                    <div class="w-100">
-
-                      <!-- Body -->
-                      <div class="card-body">
-                        <blockquote class="blockquote text-center mb-0">
-
-                          <!-- Brand -->
-                          <div class="row justify-content-center mb-5 mb-md-7">
-                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
-
-                              <!-- Logo -->
-                              <div class="img-fluid svg-shim" style="color: #3F5D87;">
-                                {{> logotype/instagram}}
-                              </div>
-
-                            </div>
-                          </div> <!-- / .row -->
-
-                          <!-- Text -->
-                          <p class="mb-5 mb-md-7">
-                            “I've never used a theme as versatile and flexible as Landkit. It's my go to for building landing sites on almost any project.”
-                          </p>
-
-                          <!-- Footer -->
-                          <footer class="blockquote-footer">
-                            <span class="h6 text-uppercase">Russ D'Sa</span>
-                          </footer>
-
-                        </blockquote>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div> <!-- / .row -->
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- SHAPE -->
-    <div class="position-relative mt-n8">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
-        {{> curves/curve-3}}
-      </div>
-    </div>
-
-    <!-- STATS -->
-    <section class="pt-12 pt-md-13 bg-gray-200">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-2">
-
-            <!-- Image -->
-            <img src="assets/img/illustrations/illustration-8.png" alt="..." class="img-fluid mb-6 mb-md-0">
-
-          </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-1">
-
-            <!-- Heading -->
-            <h2>
-              Stay focused on your business. <br>
-              <span class="text-primary">Let us handle the design</span>.
-            </h2>
-
-            <!-- Text -->
-            <p class="fs-lg text-gray-700 mb-6">
-              You have a business to run. Stop worring about cross-browser bugs, designing new pages, keeping your components up to date. Let us do that for you.
-            </p>
-
-            <!-- Stats -->
-            <div class="d-flex">
-              <div class="pe-5">
-                <h3 class="mb-0">
-                  <span data-countup='{"startVal": 0}' data-to="100" data-aos data-aos-id="countup:in"></span>%
-                </h3>
-                <p class="text-gray-700 mb-0">
-                  Satisfaction
-                </p>
-              </div>
-              <div class="border-start border-gray-300"></div>
-              <div class="px-5">
-                <h3 class="mb-0">
-                  <span data-countup='{"startVal": 0}' data-to="24" data-aos data-aos-id="countup:in"></span>/
-                  <span data-countup='{"startVal": 0}' data-to="7" data-aos data-aos-id="countup:in"></span>
-                </h3>
-                <p class="text-gray-700 mb-0">
-                  Support
-                </p>
-              </div>
-              <div class="border-start border-gray-300"></div>
-              <div class="ps-5">
-                <h3 class="mb-0">
-                  <span data-countup='{"startVal": 0}' data-to="100" data-aos data-aos-id="countup:in"></span>k+
-                </h3>
-                <p class="text-gray-700 mb-0">
-                  Sales
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- PRICING -->
-    <section class="pt-9 pt-md-12 bg-gray-200">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-
-            <!-- Heading -->
-            <h1>
-              Fair, simple pricing for all.
-            </h1>
-
-            <!-- Text -->
-            <p class="lead text-gray-700">
-              All types of businesses need access to development resources, so we give you the option to decide how much you need to use.
-            </p>
-
-            <!-- Form -->
-            <form class="d-flex align-items-center justify-content-center mb-7 mb-md-9">
-
-              <!-- Label -->
-              <span class="text-muted">
-                Annual
-              </span>
-
-              <!-- Switch -->
-              <div class="form-check form-switch mx-3">
-                <input class="form-check-input" type="checkbox" id="billingSwitch" data-toggle="price" data-target=".price">
-              </div>
-
-              <!-- Label -->
-              <span class="text-muted">
-                Monthly
-              </span>
-
-            </form>
-
-          </div>
-        </div> <!-- / .row -->
-        <div class="row align-items-center gx-0">
-          <div class="col-12 col-md-6">
-
-            <!-- Card -->
-            <div class="card rounded-lg shadow-lg mb-6 mb-md-0" style="z-index: 1;" data-aos="fade-up">
-
-              <!-- Body -->
-              <div class="card-body py-6 py-md-8">
-                <div class="row justify-content-center">
-                  <div class="col-12 col-xl-9">
-
-                    <!-- Badge -->
-                    <div class="text-center mb-5">
-                      <span class="badge rounded-pill bg-primary-soft">
-                        <span class="h6 fw-bold text-uppercase">Standard</span>
-                      </span>
-                    </div>
-
-                    <!-- Price -->
-                    <div class="d-flex justify-content-center">
-                      <span class="h2 mb-0 mt-2">$</span>
-                      <span class="price display-2 mb-0" data-annual="29" data-monthly="49">29</span>
-                      <span class="h2 align-self-end mb-1">/mo</span>
-                    </div>
-
-                    <!-- Text -->
-                    <p class="text-center text-muted mb-6 mb-md-8">
-                      per seat
-                    </p>
-
-                    <!-- Features -->
-                    <div class="d-flex">
-
-                      <!-- Check -->
-                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                        <i class="fe fe-check"></i>
-                      </div>
-
-                      <!-- Text -->
-                      <p>
-                        Rich, responsive landing pages
-                      </p>
-
-                    </div>
-                    <div class="d-flex">
-
-                      <!-- Check -->
-                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                        <i class="fe fe-check"></i>
-                      </div>
-
-                      <!-- Text -->
-                      <p>
-                        100+ styled components
-                      </p>
-
-                    </div>
-                    <div class="d-flex">
-
-                      <!-- Check -->
-                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                        <i class="fe fe-check"></i>
-                      </div>
-
-                      <!-- Text -->
-                      <p>
-                        Flexible, simple license
-                      </p>
-
-                    </div>
-                    <div class="d-flex">
-
-                      <!-- Check -->
-                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                        <i class="fe fe-check"></i>
-                      </div>
-
-                      <!-- Text -->
-                      <p>
-                        Speedy build tooling
-                      </p>
-
-                    </div>
-                    <div class="d-flex">
-
-                      <!-- Check -->
-                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                        <i class="fe fe-check"></i>
-                      </div>
-
-                      <!-- Text -->
-                      <p class="mb-0">
-                        6 months free support included
-                      </p>
-
-                    </div>
-
-                  </div>
-                </div> <!-- / .row -->
-              </div>
-
-              <!-- Button -->
-              <a href="#!" class="card-btn btn w-100 btn-lg btn-primary">
-                Get it now
-              </a>
-
-            </div>
-
-          </div>
-          <div class="col-12 col-md-6 ms-md-n3">
-
-            <!-- Card -->
-            <div class="card rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
-
-              <!-- Body -->
-              <div class="card-body py-6 py-md-8">
-                <div class="row justify-content-center">
-                  <div class="col-12 col-xl-10">
-
-                    <!-- Badge -->
-                    <p class="text-center mb-8 mb-md-11">
-                      <span class="badge rounded-pill bg-primary-soft">
-                        <span class="h6 fw-bold text-uppercase">Enterprise</span>
-                      </span>
-                    </p>
-
-                    <!-- Text -->
-                    <p class="lead text-center text-muted mb-0 mb-md-10">
-                      We offer variable pricing with discounts for larger organizations. Get in touch with us and we’ll figure out something that works for everyone.
-                    </p>
-
-                  </div>
-                </div> <!-- / .row -->
-              </div>
-
-              <!-- Button -->
-              <a href="#!" class="card-btn btn w-100 btn-lg btn-light bg-gray-300 text-gray-700">
-                Contact us
-              </a>
-
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- SHAPE -->
-    <div class="position-relative mt-n15">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
-        {{> curves/curve-1}}
-      </div>
-    </div>
-
-    <!-- FAQ -->
-    <section class="pt-15 bg-dark">
-      <div class="container pt-8 pt-md-11">
-        <div class="row">
-          <div class="col-12 col-md-6">
-
-            <!-- Item -->
-            <div class="d-flex">
-
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-success">
-                <span>?</span>
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="text-white">
-                  Can I use Landkit for my clients?
-                </h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6 mb-md-8">
-                  Absolutely. The Bootstrap Themes license allows you to build a website for personal use or for a client.
-                </p>
-
-              </div>
-
-            </div>
-
-            <!-- Item -->
-            <div class="d-flex">
-
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-success">
-                <span>?</span>
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="text-white">
-                  Do I get free updates?
-                </h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6 mb-md-0">
-                  Yes. We update all of our themes with each Bootstrap update, plus are constantly adding new components, pages, and features to our themes.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-          <div class="col-12 col-md-6">
-
-            <!-- Item -->
-            <div class="d-flex">
-
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-success">
-                <span>?</span>
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="text-white">
-                  Is there a money back guarantee?
-                </h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6 mb-md-8">
-                  Yup! Bootstrap Themes come with a satisfaction guarantee. Submit a return and get your money back.
-                </p>
-
-              </div>
-
-            </div>
-
-            <!-- Item -->
-            <div class="d-flex">
-
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-success">
-                <span>?</span>
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="text-white">
-                  Does it work with Rails? React? Laravel?
-                </h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6 mb-md-0">
-                  Yes. Landkit has basic CSS/JS files you can include. If you want to enable deeper customization, you can integrate it into your assets pipeline or build processes.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- CTA -->
-    <section class="py-8 py-md-11 bg-dark">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-
-            <!-- Badge -->
-            <span class="badge rounded-pill bg-gray-700-soft mb-4">
-              <span class="h6 fw-bold text-uppercase">Get started</span>
-            </span>
-
-            <!-- Heading -->
-            <h1 class="display-4 text-white">
-              Get Landkit and save your time.
-            </h1>
-
-            <!-- Text -->
-            <p class="fs-lg text-muted mb-6 mb-md-8">
-              Stop wasting time trying to do it the "right way" and build a site from scratch. Landkit is faster, easier, and you still have complete control.
-            </p>
-
-            <!-- Button -->
-            <a href="https://themes.getbootstrap.com/product/landkit/" target="_blank" class="btn btn-success lift">
-              Buy it now <i class="fe fe-arrow-right"></i>
-            </a>
 
           </div>
         </div> <!-- / .row -->
@@ -912,13 +99,412 @@
 
     <!-- SHAPE -->
     <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
         {{> curves/curve-1}}
       </div>
     </div>
 
+    <!-- FEATURES -->
+    <section class="bg-gradient-dark-black py-8 py-md-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-7 text-center">
+
+            <!-- Heading -->
+            <h2 class="display-3 fw-bold text-white">
+              Never miss another profitable trade again.
+            </h2>
+
+            <!-- Text -->
+            <p class="lead text-muted mb-9">
+              Wether you're on-the-go or at the computer, Coinflow will alert you of the most important technical indicators as they happen in real time.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row mt-n7">
+          <div class="col-12 col-sm-6 col-lg-4 mt-7">
+
+            <!-- Card -->
+            <div class="card h-100 bg-dark rounded-3">
+              <div class="card-body p-5 pb-0 my-auto">
+
+                <!-- Image -->
+                <img class="img-fluid" src="assets/img/illustrations/illustration-1-dark.png" alt="..." style="max-width: 150px;">
+
+              </div>
+              <div class="card-body p-5">
+
+                <!-- Heading -->
+                <h3 class="fw-bold text-white">
+                  Leading Indicators
+                </h3>
+
+                <!-- Text -->
+                <p class="text-muted mb-0">
+                  Beautiful style-matched illustrations for free.
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mt-7">
+
+            <!-- Card -->
+            <div class="card h-100 bg-dark rounded-3">
+              <div class="card-body p-5 pb-0 my-auto">
+
+                <!-- Letter -->
+                <div class="lh-1 fw-bolder text-info" style="font-size: 100px;">Aa</div>
+
+              </div>
+              <div class="card-body p-5">
+
+                <!-- Heading -->
+                <h3 class="fw-bold text-white">
+                  24/7 Monitoring
+                </h3>
+
+                <!-- Text -->
+                <p class="text-muted mb-0">
+                  Hk Grotes Pro provided and licensed for all uses.
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mt-7">
+
+            <!-- Card -->
+            <div class="card h-100 bg-dark rounded-3">
+              <div class="card-body p-5 pb-0 my-auto">
+
+                <!-- Palette -->
+                <div class="d-inline-flex flex-row-reverse">
+                  <div class="p-6 rounded-circle bg-primary ms-n3"></div>
+                  <div class="p-6 rounded-circle bg-gray-800 ms-n3"></div>
+                  <div class="p-6 rounded-circle bg-gradient-multicolor"></div>
+                </div>
+
+              </div>
+              <div class="card-body p-5">
+
+                <!-- Heading -->
+                <h3 class="fw-bold text-white">
+                  Instant Notifications
+                </h3>
+
+                <!-- Text -->
+                <p class="text-muted mb-0">
+                  Harmonious color scheme easy to tailor to your needs.
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mt-7">
+
+            <!-- Card -->
+            <div class="card h-100 bg-dark rounded-3">
+              <div class="card-body p-5 pb-0 my-auto">
+
+                <!-- Icon -->
+                <div class="icon icon-xl">
+                  {{> communication/mail-opened-info}}
+                </div>
+
+              </div>
+              <div class="card-body p-5">
+
+                <!-- Heading -->
+                <h3 class="fw-bold text-white">
+                  Customizable Alerts
+                </h3>
+
+                <!-- Text -->
+                <p class="text-muted mb-0">
+                  Two sets of icons to suit any degree of fidelity.
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mt-7">
+
+            <!-- Card -->
+            <div class="card h-100 bg-dark rounded-3">
+              <div class="card-body p-5 pb-0 my-auto">
+
+                <!-- Images -->
+                <div class="row gx-0" style="max-width: 150px;">
+                  <div class="col-4">
+
+                    <!-- Image -->
+                    <img class="w-150 rounded-1" src="assets/img/portfolio/portfolio-3.jpg" alt="...">
+
+                  </div>
+                  <div class="col-4">
+
+                    <!-- Image -->
+                    <img class="w-150 mt-3 rounded-1" src="assets/img/portfolio/portfolio-2.jpg" alt="...">
+
+                  </div>
+                  <div class="col-4">
+
+                    <!-- Image -->
+                    <img class="w-150 mt-5 rounded-1" src="assets/img/portfolio/portfolio-1.jpg" alt="...">
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-body p-5">
+
+                <!-- Heading -->
+                <h3 class="fw-bold text-white">
+                  Easy Setup & Presets
+                </h3>
+
+                <!-- Text -->
+                <p class="text-muted mb-0">
+                  Collection of images to use as you please without limitation.
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mt-7">
+
+            <!-- Card -->
+            <div class="card h-100 bg-dark rounded-3">
+              <div class="card-body p-5 pb-0 my-auto">
+
+                <!-- Icon -->
+                <div class="icon d-inline-flex p-3 rounded-circle bg-info text-white">
+                  {{> design/bezier-curve}}
+                </div>
+
+              </div>
+              <div class="card-body p-5">
+
+                <!-- Heading -->
+                <h3 class="fw-bold text-white">
+                  Works On-The-Go
+                </h3>
+
+                <!-- Text -->
+                <p class="text-muted mb-0">
+                  A rich variable system to adjust the design to your needs.
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="pt-8 pt-md-11 bg-black">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-6 col-lg-5">
+
+            <!-- Heading -->
+            <h2 class="display-3 fw-bold text-white mb-6 mb-md-8">
+              Multi-exchange monitoring.
+            </h2>
+
+            <!-- Text -->
+            <p class="text-muted lead mb-6">
+              <span class="text-white fw-bold">Considered.</span> Most frameworks simply invert colors, but we create a separate palette to make dark mode just as sharp.
+            </p>
+
+            <!-- Text -->
+            <p class="text-muted lead mb-7 mb-md-0">
+              <span class="text-white fw-bold">Efficient.</span> Often dark mode is bundled into a single style codebase, but we've kept it separate to keep filesize small.
+            </p>
+
+          </div>
+          <div class="col-12 col-md-6">
+
+            <!-- Media -->
+            <div class="position-relative vw-md-50 pt-7 ps-7 ps-md-9 overflow-hidden" style="max-width: 800px;">
+
+              <!-- Background -->
+              <div class="position-absolute top-0 end-0 bottom-0 start-0 bg-gradient-multicolor rounded-4"></div>
+
+              <!-- Image -->
+              <img class="position-relative w-100 w-md-150" src="assets/img/screenshots/desktop/dashkit-alt-mixed-cropped.png" alt="...">
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="pt-8 pt-md-11 bg-black">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-6 col-lg-5 order-md-1">
+
+            <!-- Heading -->
+            <h2 class="display-4 fw-bold text-white mb-6 mb-md-8">
+              Professional trading alerts made simple.
+            </h2>
+
+            <!-- Text -->
+            <p class="text-muted lead mb-6">
+              <span class="text-white fw-bold">Components.</span> UI elements are organized into components and variants to make extensive customization much easier.
+            </p>
+
+            <!-- Text -->
+            <p class="text-muted lead mb-7 mb-md-0">
+              <span class="text-white fw-bold">Color + Text Styles.</span> We've codified a type scale and color palette for rapid building of new components and pages.
+            </p>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 order-md-0">
+
+            <!-- Positioner -->
+            <div class="position-relative">
+
+              <!-- Media -->
+              <div class="position-relative vw-md-50 p-7 p-md-9 ps-0 overflow-hidden float-end" style="max-width: 800px;">
+
+                <!-- Background -->
+                <div class="position-absolute top-0 end-0 bottom-0 start-0 bg-gradient-multicolor reverse rounded-4"></div>
+
+                <!-- Image -->
+                <img class="position-relative w-100 w-md-120 float-end" src="assets/img/screenshots/ui/landkit-figma.png" alt="...">
+
+              </div>
+
+              <!-- Icon -->
+              <img class="img-fluid position-absolute top-0 end-0 mt-n5 me-n5" src="assets/img/icons/figma-dark-circle.png" alt="...">
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+    </section>
+
+    <!-- PLACEMENT RATES -->
+    <section class="py-10 py-md-11 bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-6">
+
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-primary">
+              Trade smarter, not harder
+            </h6>
+
+            <!-- Heading -->
+            <h2 class="display-3 fw-bold text-white">
+              Level up your trading strategy today.
+            </h2>
+
+            <!-- Text -->
+            <p class="text-muted lead mb-6 mb-md-8">
+              We've made it easier for thousands of people to build their wealth through crypto.
+            </p>
+
+            <!-- Stats -->
+            <div class="d-flex">
+              <div class="pe-5">
+                <h1 class="fw-bold text-white mb-0">
+                  <span data-countup='{"startVal": 0}' data-to="12" data-aos data-aos-id="countup:in">0</span>
+                </h1>
+                <p class="text-gray-700 mb-0">
+                  Alerts
+                </p>
+              </div>
+              <div class="px-5">
+                <h1 class="fw-bold text-white mb-0">
+                  <span data-countup='{"startVal": 0}' data-to="4" data-aos data-aos-id="countup:in">0</span>
+                </h1>
+                <p class="text-gray-700 mb-0">
+                  Timeframes
+                </p>
+              </div>
+              <div class="ps-5">
+                <h1 class="fw-bold text-white mb-0">
+                  <span data-countup='{"startVal": "0"}' data-to="4" data-aos data-aos-id="countup:in">0</span>
+                </h1>
+                <p class="text-gray-700 mb-0">
+                  Exchanges
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- IMAGE -->
+    <section class="py-14 py-lg-16 jarallax" data-jarallax data-speed=".8" style="background-image: url(assets/img/covers/cover-19.jpg);">
+
+      <!-- Shape -->
+      <div class="shape shape-top shape-fluid-x svg-shim text-black">
+        {{> angles/angle-top}}
+      </div>
+
+      <!-- Shape -->
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-black">
+        {{> angles/angle-bottom}}
+      </div>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="py-10 py-md-14 bg-black">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Pretitle -->
+            <h6 class="text-uppercase text-primary mb-6">
+              Real-time market signals
+            </h6>
+
+            <!-- Heading -->
+            <h1 class="display-1 fw-bold text-white">
+              Never miss another profitable trade again.
+            </h1>
+
+            <!-- Text -->
+            <p class="fs-lg text-gray-500 mb-6 mb-md-8">
+              We'll alert you in real-time when certain market conditions are met so you can make smarter trades no matter where you are.
+            </p>
+
+            <!-- Button -->
+            <a href="#!" class="btn btn-primary lift">
+              Get started free <i class="fe fe-arrow-right ms-2"></i>
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- BORDER -->
+    <div class="bg-black">
+      <div class="container border-top border-gray-900-50"></div>
+    </div>
+
     <!-- FOOTER -->
-    {{> partials/footer classList="bg-gray-200"}}
+    {{> partials/footer classList="bg-black"}}
 
     <!-- JAVASCRIPT -->
     {{> partials/scripts}}
