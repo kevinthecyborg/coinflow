@@ -1,4 +1,48 @@
-// 
+//
 // user.scss
 // Use this to write your custom SCSS
 //
+
+// COLORS
+.bg-black {
+  background-color: $black-1 !important;
+}
+.text-black {
+  color: $black-1 !important;
+}
+.bg-gradient-multicolor {
+  background-image: conic-gradient(from 80deg at 50% 50%,
+      #3023AE 0deg,
+      #53A0FE 180deg,
+      #B4ED50 360deg);
+}
+.bg-gradient-multicolor.reverse {
+  background-image: conic-gradient(from 280deg at 50% 50%,
+      #B4ED50 0deg,
+      #53A0FE 180deg,
+      #3023AE 360deg);
+}
+.shadow-multicolor {
+  box-shadow: -300px 100px 300px rgba(#53A0FE, .05), 300px -100px 300px rgba(#B4ED50, .05);
+}
+
+// NAVBAR
+.navbar-brand-img {
+  max-height: 1.2rem;
+}
+.navbar-dark .navbar-brand {
+  filter: none;
+}
+
+// FOOTER
+footer img.footer-brand {
+  max-height: 1.2rem;
+}
+
+// TYPOGRAPHY
+.fw-bold {
+  font-weight: 400 !important;
+}
+.display-1, .display-2, .display-3, .display-4 {
+  letter-spacing: 0;
+}
