@@ -3,17 +3,16 @@
   <head>
     {{> partials/head title="Landkit"}}
   </head>
-  <body class="jarallax bg-pattern-stars-gradient" data-jarallax data-speed=".8">
-  <div class="jarallax bg-pattern-stars-big" data-jarallax data-speed=".6">
+  <body class="bg-light">
 
     <!-- MODALS -->
     {{> partials/modals}}
 
     <!-- NAVBAR -->
-    {{> partials/navbar classList="navbar-dark" container="container-fluid" button="primary"}}
+    {{> partials/navbar classList="navbar-dark bg-dark" container="container-fluid" button="primary"}}
 
     <!-- WELCOME -->
-    <section class="position-relative pt-8 pt-md-11 pb-10 pb-md-15">
+    <section class="position-relative pt-8 pt-md-11 pb-10 pb-md-15 bg-gradient-dark-black">
 
       <!-- Content -->
       <div class="container">
@@ -22,7 +21,7 @@
 
             <!-- Heading -->
             <h1 class="display-2 text-white">
-              Choose your fighter.
+              Choose your weapon.
             </h1>
 
             <!-- Text -->
@@ -56,20 +55,27 @@
 
     </section>
 
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-black">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
     <!-- PRICING -->
-    <section class="mt-n8 mt-md-n14">
+    <section class="bg-black mt-n8 mt-md-n14">
       <div class="container">
         <div class="row gx-4">
           <div class="col-12 col-md-4">
 
             <!-- Card -->
-            <div class="card bg-dark-transparent-75 shadow-lg mb-6 mb-md-0">
+            <div class="card bg-black-transparent-50 shadow-lg mb-6 mb-md-0">
               <div class="card-body">
 
                 <!-- Preheading -->
                 <div class="text-center mb-3">
                   <span class="badge rounded-pill bg-primary-soft">
-                    <span class="h6 text-uppercase">Karen</span>
+                    <span class="h6 text-uppercase">Beginner</span>
                   </span>
                 </div>
 
@@ -223,13 +229,13 @@
           <div class="col-12 col-md-4">
 
             <!-- Card -->
-            <div class="card bg-dark-transparent-75 shadow-lg mb-6 mb-md-0">
+            <div class="card bg-black-transparent-50 shadow-lg mb-6 mb-md-0">
               <div class="card-body">
 
                 <!-- Preheading -->
                 <div class="text-center mb-3">
                   <span class="badge rounded-pill bg-primary-soft">
-                    <span class="h6 text-uppercase">Joe</span>
+                    <span class="h6 text-uppercase">Advanced</span>
                   </span>
                 </div>
 
@@ -383,13 +389,13 @@
           <div class="col-12 col-md-4">
 
             <!-- Card -->
-            <div class="card bg-dark-transparent-75 shadow-lg mb-md-0">
+            <div class="card bg-black-transparent-50 shadow-lg mb-md-0">
               <div class="card-body">
 
                 <!-- Preheading -->
                 <div class="text-center mb-3">
                   <span class="badge rounded-pill bg-primary-soft">
-                    <span class="h6 text-uppercase">Elon</span>
+                    <span class="h6 text-uppercase">Expert</span>
                   </span>
                 </div>
 
@@ -545,7 +551,7 @@
     </section>
 
     <!-- ENTERPRISE -->
-    <section class="py-8 py-md-11">
+    <section class="bg-black py-8 py-md-11">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
@@ -562,7 +568,7 @@
 
             <!-- Text -->
             <p class="fs-lg text-muted mb-7 mb-md-9">
-              Get started with our free Karen plan, or try a free 7-day trial of the Joe and Elon plans. No contracts, cancel anytime.
+              Get started with our free beginner plan, or try a free 7-day trial of the Advanced and Expert plans. No contracts, cancel anytime.
             </p>
 
           </div>
@@ -626,8 +632,15 @@
       </div> <!-- / .container -->
     </section>
 
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
     <!-- FAQ -->
-    <section class="py-8 py-md-11">
+    <section class="py-8 py-md-11 bg-dark">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-md-8 text-center">
@@ -721,7 +734,7 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section class="py-8 py-md-11">
+    <section class="bg-gradient-dark-black py-8 py-md-11">
       <div class="container">
         <div class="row align-items-stretch">
           <div class="col-12 col-md-5">
@@ -780,11 +793,10 @@
     </section>
 
     <!-- FOOTER -->
-    {{> partials/footer classList=""}}
+    {{> partials/footer classList="bg-black"}}
 
     <!-- JAVASCRIPT -->
     {{> partials/scripts}}
 
-  </div>
   </body>
 </html>

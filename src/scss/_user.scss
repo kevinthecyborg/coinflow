@@ -34,6 +34,9 @@ nav .navbar-brand-img {
 .navbar-dark .navbar-brand {
   filter: none;
 }
+.list-group-item.bg-transparent {
+  border-color: #0B1531;
+}
 
 // FOOTER
 footer img.footer-brand {
@@ -66,4 +69,32 @@ footer img.footer-brand {
 }
 .bg-pattern-stars-big {
   background-image: url(../img/patterns/stars-2.svg);
+}
+.bg-dark-transparent-75 {
+  background-color: rgba(3,6,14,0.75);
+}
+.bg-transparent {
+  background: transparent;
+}
+
+// FORM
+.form-check-dark .form-check-input {
+  background-color: #0B1530;
+}
+
+
+
+
+
+
+
+// RESPONSIVE
+@media (max-width: 991.98px) {
+  .navbar-collapse,
+  .list-group-item.bg-transparent {
+    background-color: #02040A;
+  }
+  .navbar-collapse .navbar-nav .nav-item + .nav-item {
+    border-top: none;
+  }
 }
