@@ -3,7 +3,8 @@
   <head>
     {{> partials/head title="Landkit"}}
   </head>
-  <body>
+  <body class="jarallax bg-pattern-stars-gradient" data-jarallax data-speed=".8">
+  <div class="jarallax bg-pattern-stars-big" data-jarallax data-speed=".6">
 
     <!-- CONTENT -->
     <section class="section-border border-primary">
@@ -11,15 +12,19 @@
         <div class="row align-items-center justify-content-center gx-0 min-vh-100">
           <div class="col-12 col-md-5 col-lg-4 py-8 py-md-11">
 
-            <!-- Heading -->
-            <h1 class="mb-0 fw-bold text-center">
-              Sign in
-            </h1>
+            <!-- Brand -->
+            <div class="text-center mb-5">
+              <a class="navbar-brand navbar-brand-medium" href="{{webRoot}}/index.html">
+                <img src="{{webRoot}}/assets/img/brand.svg" class="navbar-brand-img" alt="...">
+              </a>
+            </div>
 
-            <!-- Text -->
-            <p class="mb-6 text-center text-muted">
-              Simplify your workflow in minutes.
-            </p>
+            <!-- Badge -->
+            <div class="text-center mb-6">
+              <span class="badge rounded-pill bg-primary-soft">
+                <span class="h6 text-uppercase fw-bold">Log in</span>
+              </span>
+            </div>
 
             <!-- Form -->
             <form class="mb-6">
@@ -49,7 +54,7 @@
 
             <!-- Text -->
             <p class="mb-0 fs-sm text-center text-muted">
-              Don't have an account yet <a href="signup.html">Sign up</a>.
+              Don't have an account yet <a href="sign-up.html">Sign up</a>.
             </p>
 
           </div>
@@ -60,5 +65,6 @@
     <!-- JAVASCRIPT -->
     {{> partials/scripts}}
 
+  </div>
   </body>
 </html>

@@ -1,25 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
-    
-    <!-- Map CSS -->
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
-    
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
-    
-    <!-- Title -->
-    <title>Landkit</title>
+    {{> partials/head title="Landkit"}}
   </head>
-  <body>
+  <body class="jarallax bg-pattern-stars-gradient" data-jarallax data-speed=".8">
+  <div class="jarallax bg-pattern-stars-big" data-jarallax data-speed=".6">
 
     <!-- CONTENT -->
     <section class="section-border border-primary">
@@ -27,15 +12,19 @@
         <div class="row align-items-center justify-content-center gx-0 min-vh-100">
           <div class="col-12 col-md-5 col-lg-4 py-8 py-md-11">
 
-            <!-- Heading -->
-            <h1 class="mb-0 fw-bold text-center">
-              Sign in
-            </h1>
+            <!-- Brand -->
+            <div class="text-center mb-5">
+              <a class="navbar-brand navbar-brand-medium" href="{{webRoot}}/index.html">
+                <img src="{{webRoot}}/assets/img/brand.svg" class="navbar-brand-img" alt="...">
+              </a>
+            </div>
 
-            <!-- Text -->
-            <p class="mb-6 text-center text-muted">
-              Simplify your workflow in minutes.
-            </p>
+            <!-- Badge -->
+            <div class="text-center mb-6">
+              <span class="badge rounded-pill bg-primary-soft">
+                <span class="h6 text-uppercase fw-bold">Sign up</span>
+              </span>
+            </div>
 
             <!-- Form -->
             <form class="mb-6">
@@ -58,14 +47,14 @@
 
               <!-- Submit -->
               <button class="btn w-100 btn-primary" type="submit">
-                Sign in
+                Sign up
               </button>
 
             </form>
 
             <!-- Text -->
             <p class="mb-0 fs-sm text-center text-muted">
-              Don't have an account yet <a href="signup.html">Sign up</a>.
+              Already have an account? <a href="log-in.html">Log in</a>.
             </p>
 
           </div>
@@ -74,14 +63,8 @@
     </section>
 
     <!-- JAVASCRIPT -->
-    <!-- Map JS -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-    
-    <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
-    
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
+    {{> partials/scripts}}
 
+  </div>
   </body>
 </html>

@@ -12,22 +12,23 @@
 }
 .bg-gradient-multicolor {
   background-image: conic-gradient(from 80deg at 50% 50%,
-      #3023AE 0deg,
-      #53A0FE 180deg,
-      #B4ED50 360deg);
+      #0F1C46 0deg,
+      #335EEA 360deg);
 }
 .bg-gradient-multicolor.reverse {
   background-image: conic-gradient(from 280deg at 50% 50%,
-      #B4ED50 0deg,
-      #53A0FE 180deg,
-      #3023AE 360deg);
+      #335EEA 0deg,
+      #0F1C46 360deg);
 }
 .shadow-multicolor {
-  box-shadow: -300px 100px 300px rgba(#53A0FE, .05), 300px -100px 300px rgba(#B4ED50, .05);
+  box-shadow: -300px 100px 300px rgba(#53A0FE, .1), 300px -100px 300px rgba(#B4ED50, .1);
+}
+.opacity-10 {
+  opacity: 0.1;
 }
 
 // NAVBAR
-.navbar-brand-img {
+nav .navbar-brand-img {
   max-height: 1.2rem;
 }
 .navbar-dark .navbar-brand {
@@ -45,4 +46,24 @@ footer img.footer-brand {
 }
 .display-1, .display-2, .display-3, .display-4 {
   letter-spacing: 0;
+}
+
+// LOGOS
+.svg-white svg {
+  filter: brightness(0) invert(1);
+}
+.navbar-brand-medium .navbar-brand-img {
+  max-height: 2rem;
+}
+
+// BACKGROUNDS
+.bg-pattern-stars-1 {
+  background-image: url(../img/patterns/stars-1.svg);
+}
+.bg-pattern-stars-gradient {
+  background-image: url(../img/patterns/stars-1.svg), linear-gradient(to bottom, #070C1C 0%, transparent 100%);
+  background-repeat: repeat-y;
+}
+.bg-pattern-stars-big {
+  background-image: url(../img/patterns/stars-2.svg);
 }

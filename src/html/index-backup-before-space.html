@@ -3,8 +3,7 @@
   <head>
     {{> partials/head title="Coinflow - Cryptocurrency Alerts"}}
   </head>
-  <body class="jarallax bg-pattern-stars-gradient" data-jarallax data-speed=".8">
-  <div class="jarallax bg-pattern-stars-big" data-jarallax data-speed=".6">
+  <body>
 
     <!-- MODALS -->
     {{> partials/modals}}
@@ -13,7 +12,7 @@
     {{> partials/navbar classList="navbar-dark" container="container-fluid" button="primary"}}
 
     <!-- WELCOME -->
-    <section class="position-relative pt-12 pb-8 pt-md-14 pb-md-11">
+    <section class="position-relative mt-n11 pt-12 pb-8 pt-md-14 pb-md-11 bg-black bg-pattern-stars-1" data-jarallax data-speed=".8">
 
       <!-- Shape
       <div class="shape shape-fluid-x shape-blur-1 svg-shim text-black-50">
@@ -98,15 +97,15 @@
       </div> <!-- / .container -->
     </section>
 
-    <!-- SHAPE
+    <!-- SHAPE -->
     <div class="position-relative">
       <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
         {{> curves/curve-1}}
       </div>
-    </div> -->
+    </div>
 
     <!-- FEATURES -->
-    <section class="py-8 py-md-11" id="features">
+    <section class="bg-gradient-dark-black py-8 py-md-11" id="features">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-lg-7 text-center">
@@ -297,7 +296,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="pt-8 pt-md-11">
+    <section class="pt-8 pt-md-11 bg-black bg-pattern-stars-1" data-jarallax data-speed=".8">
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-12 col-md-6 col-lg-5">
@@ -337,7 +336,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="pt-8 pt-md-11">
+    <section class="pt-8 pt-md-11 bg-black bg-pattern-stars-1" data-jarallax data-speed=".8">
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-12 col-md-6 col-lg-5 order-md-1">
@@ -385,7 +384,7 @@
     </section>
 
     <!-- PLACEMENT RATES -->
-    <section class="py-10 py-md-11">
+    <section class="py-10 py-md-11 bg-black bg-pattern-stars-1" data-jarallax data-speed=".8">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-8 col-lg-6">
@@ -415,21 +414,23 @@
       </div> <!-- / .container -->
     </section>
 
-    <!-- IMAGE
+    <!-- IMAGE -->
     <section class="py-14 py-lg-16 jarallax" data-jarallax data-speed=".8" style="background-image: url(assets/img/covers/cover-19.jpg);">
 
+      <!-- Shape -->
       <div class="shape shape-top shape-fluid-x svg-shim text-black bg-pattern-stars-1" data-jarallax data-speed=".8">
         {{> angles/angle-top}}
       </div>
 
+      <!-- Shape -->
       <div class="shape shape-bottom shape-fluid-x svg-shim text-black">
         {{> angles/angle-bottom}}
       </div>
 
-    </section> -->
+    </section>
 
     <!-- CTA -->
-    <section class="py-10 py-md-14">
+    <section class="py-10 py-md-14 bg-black">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
@@ -459,12 +460,16 @@
       </div> <!-- / .container -->
     </section>
 
+    <!-- BORDER -->
+    <div class="bg-black">
+      <div class="container border-top border-gray-900-50"></div>
+    </div>
+
     <!-- FOOTER -->
-    {{> partials/footer classList=""}}
+    {{> partials/footer classList="bg-black"}}
 
     <!-- JAVASCRIPT -->
     {{> partials/scripts}}
 
-  </div> <!-- stars 2 bg -->
   </body>
 </html>
