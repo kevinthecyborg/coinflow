@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon" />
+    
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="../assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../assets/css/theme.bundle.css" />
+    
+    <!-- Title -->
+    <title>RSI Cross Alert - Coinflow</title>
+  </head>
+  <body class="jarallax bg-pattern-stars-gradient" data-jarallax data-speed=".8">
+  <div class="jarallax bg-pattern-stars-big" data-jarallax data-speed=".6">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-transparent-75">
+      <div class="container-fluid">
+    
+        <!-- Brand -->
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/img/brand.svg" class="navbar-brand-img" alt="...">
+        </a>
+    
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+    
+          <!-- Navigation -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../alerts.html">Alerts</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../pricing.html">Pricing</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../faq.html">FAQ</a>
+            </li>
+          </ul>
+    
+          <!-- Buttons -->
+          <div class="ms-auto">
+          <a class="navbar-btn btn btn-sm btn-primary-soft lift me-2" href="../log-in.html">
+            Log in
+          </a>
+    
+          <a class="navbar-btn btn btn-sm btn-primary lift" href="../sign-up.html">
+            Sign up
+          </a>
+          </div>
+    
+        </div>
+    
+      </div>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <nav class="bg-dark d-md-none">
+      <div class="container-md">
+        <div class="row align-items-center">
+          <div class="col">
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <span class="text-white">
+                  Alerts
+                </span>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <span class="text-white">
+                  RSI Cross
+                </span>
+              </li>
+            </ol>
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Toggler -->
+            <div class="navbar-dark">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </nav>
+
+    <!-- HEADER -->
+    <header class="pt-9 pb-11 d-none d-md-block">
+      <div class="container-md">
+        <div class="row align-items-center">
+          <div class="col">
+
+            <!-- Heading -->
+            <h1 class="fw-bold text-white mb-2">
+              RSI Cross
+            </h1>
+
+            <!-- Text -->
+            <p class="fs-lg text-white-75 mb-0">
+              Get alerted when RSI crosses below 30 or above 70.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </header>
+
+    <!-- MAIN -->
+    <main class="pb-8 pb-md-11 mt-md-n6">
+      <div class="container-md">
+        <div class="row">
+
+          <!-- Left Nav -->
+          <div class="col-12 col-md-3">
+          
+            <!-- Card -->
+            <div class="card card-bleed border-bottom border-bottom-md-0 bg-dark shadow-light-lg">
+          
+              <!-- Collapse -->
+              <div class="collapse d-md-block" id="sidenavCollapse">
+                <div class="card-body">
+          
+                  <!-- Heading -->
+                  <h6 class="fw-bold text-uppercase text-primary mb-3">
+                    Premium Alerts
+                  </h6>
+          
+                  <!-- List -->
+                  <ul class="card-list list text-gray-700 mb-6">
+                    <li class="list-item active">
+                      <a class="list-link text-reset" href="../alerts/superflow.html">
+                        SuperFlow
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="../alerts/overbought-oversold.html">
+                        Overbought/Oversold
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="../alerts/pennant-flag.html">
+                        Pennant Flag
+                      </a>
+                    </li>
+                  </ul>
+          
+                  <!-- Heading -->
+                  <h6 class="fw-bold text-uppercase text-primary mb-3">
+                    Advanced Alerts
+                  </h6>
+          
+                  <!-- List -->
+                  <ul class="card-list list text-gray-700 mb-6">
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="../alerts/rsi-cross.html">
+                        RSI Cross
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="../alerts/price-shear.html">
+                        Price Shear
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="../alerts/volume-breakout.html">
+                        Volume + Breakout
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="../alerts/inside-bar-break.html">
+                        Inside Bar Break
+                      </a>
+                    </li>
+                  </ul>
+          
+                  <!-- Basic Indicators -->
+                  <h6 class="fw-bold text-uppercase text-primary mb-3">
+                    Basic Alerts
+                  </h6>
+          
+                  <!-- List -->
+                  <ul class="card-list list text-gray-700 mb-0">
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="../alerts/golden-death-cross.html">
+                        Golden/Death Cross
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="../alerts/macd-cross.html">
+                        MACD Cross
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="../alerts/ema-cross.html">
+                        EMA Cross
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="../alerts/abnormal-volume.html">
+                        Abnormal Volume
+                      </a>
+                    </li>
+                  </ul>
+          
+                </div>
+              </div>
+          
+            </div>
+          
+          </div>
+
+          <!-- Content-->
+          <div class="col-12 col-md-9">
+
+            <!-- Card -->
+            <div class="card card-bleed shadow-light-lg bg-dark mb-6">
+              <div class="card-header">
+
+                <!-- Heading -->
+                <h4 class="mb-0">
+                  About RSI Cross
+                </h4>
+
+              </div>
+              <div class="card-body">
+
+                <p class="text-muted">
+                  RSI has been the backbone to a successful crypto trading strategy by indicating momentum in overbought and oversold conditions. A vast majority of our analysis factors in the RSI levels, which have led to significant oversold bounces.
+                </p>
+                <p class="text-muted">
+                  In ranging markets, the RSI often oscillates between oversold and overbought, making this a useful alert to set up when trying to time your entries and exits.
+                </p>
+
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card card-bleed bg-dark shadow-light-lg">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Heading -->
+                    <h4 class="mb-0">
+                      Exchange Compatibility
+                    </h4>
+
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <div class="icon icon-sm">
+                          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="#12161C"/>
+                          <path d="M10.0329 15.9999L7.58487 18.4649L5.11987 15.9999L7.58487 13.5349L10.0329 15.9999ZM15.9999 10.0329L20.2159 14.2489L22.6809 11.7839L18.4649 7.58487L15.9999 5.11987L13.5349 7.58487L9.33587 11.7839L11.8009 14.2489L15.9999 10.0329ZM24.4149 13.5349L21.9669 15.9999L24.4319 18.4649L26.8799 15.9999L24.4149 13.5349ZM15.9999 21.9669L11.7839 17.7509L9.33587 20.2159L13.5519 24.4319L15.9999 26.8799L18.4649 24.4149L22.6809 20.1989L20.2159 17.7509L15.9999 21.9669ZM15.9999 18.4649L18.4649 15.9999L15.9999 13.5349L13.5349 15.9999L15.9999 18.4649Z" fill="#F0B90B"/>
+                          </svg>
+                        </div>
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Binance
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          15m · 30m · 1h · 4h · 1d
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badges -->
+                        <span class="badge badge-lg bg-success-soft">
+                          Bull
+                        </span>
+                        <span class="badge badge-lg bg-danger-soft">
+                          Bear
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <div class="icon icon-sm">
+                          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="16" cy="16" r="16" fill="#102331"/>
+                          <path d="M8.56767 21.8757C9.25932 22.6153 13.0583 26.1599 19.0212 22.0461C23.333 18.6556 23.2253 11.3049 22.8111 9.0851C22.6668 9.40819 17.6585 20.4821 8.56767 21.8757ZM22.8105 9.08323C22.7576 9.06121 17.2103 8.29756 11.7263 11.8639C8.32094 14.0786 7.87084 17.3199 8.0262 19.4798C15.9983 18.5789 22.6297 9.33724 22.8105 9.08323Z" fill="#97C554"/>
+                          <path d="M23 9.07942C22.9464 9.05841 17.3282 8.32972 11.774 11.7328C8.32505 13.8461 7.86918 16.939 8.02653 19C16.1006 18.1404 22.8169 9.3218 23 9.07942Z" fill="#709B30"/>
+                          </svg>
+                        </div>
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Bitfinex
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          15m · 30m · 1h · 4h · 1d
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badges -->
+                        <span class="badge badge-lg bg-success-soft">
+                          Bull
+                        </span>
+                        <span class="badge badge-lg bg-danger-soft">
+                          Bear
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <div class="icon icon-sm">
+                          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9095 14.1577C17.3518 14.0695 16.779 14.1004 16.2163 14.0954C15.3805 14.0954 14.5446 14.1061 13.7131 14.0903C13.7031 15.6029 13.7031 17.1152 13.7131 18.6272C14.7167 18.6165 15.716 18.6222 16.7174 18.6222C17.2486 18.6222 17.7927 18.6423 18.3016 18.4516C18.6449 18.3288 18.9515 18.1208 19.1925 17.8473C19.4336 17.5737 19.6014 17.2435 19.6801 16.8875C19.7984 16.2889 19.7367 15.6337 19.3934 15.1176C19.0679 14.6014 18.498 14.276 17.9095 14.1577Z" fill="#149F49"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0ZM9.33333 18.8029C10.1849 18.8179 11 18.276 11.3513 17.5068C11.5146 17.1464 11.5855 16.751 11.5577 16.3563C11.5935 15.5921 11.2222 14.8129 10.572 14.395C10.2136 14.1369 9.77204 14.0366 9.33835 14.0079C9.33333 13.4036 9.33835 12.805 9.33333 12.2065C9.95771 12.2323 10.5663 11.9434 10.9821 11.4839C11.384 11.0319 11.5903 10.439 11.5556 9.83513C11.4839 9.10251 11.0538 8.39498 10.3892 8.0595C10.0688 7.87384 9.70251 7.80645 9.3362 7.7914C9.32545 7.13047 9.3362 6.47527 9.33118 5.81936C12.1749 5.81434 15.0186 5.80932 17.8674 5.81936C18.9979 5.89104 20.1441 6.28961 20.9849 7.06882C21.551 7.59909 21.931 8.29765 22.0688 9.06093C22.1928 9.97419 22.1104 10.9706 21.5577 11.7398C21.2072 12.2867 20.6702 12.6839 20.0975 12.9835C20.9849 13.324 21.7799 13.9484 22.2237 14.8C22.833 15.967 22.8172 17.443 22.162 18.5835C21.7125 19.3835 20.9591 19.9871 20.1183 20.3384C19.2774 20.6896 18.3427 20.8129 17.4344 20.8029H9.33405C9.3319 20.1341 9.33692 19.4681 9.3319 18.8029H9.33333ZM22.6667 26.1778C20.8552 26.1986 19.0387 26.1835 17.2186 26.1885C14.5914 26.1835 11.9649 26.1986 9.33763 26.1778C9.32186 25.466 9.32186 24.7484 9.33763 24.0308C12.0832 24.01 14.8294 24.0308 17.5814 24.0258C19.2746 24.0308 20.9728 24.01 22.6652 24.0308C22.6789 24.7484 22.6789 25.466 22.6631 26.1778H22.6667Z" fill="#149F49"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4288 12.129C16.8776 12.1189 17.332 12.1705 17.765 12.0308C18.4776 11.8293 19.1177 11.2358 19.231 10.4824C19.3342 9.86302 19.2159 9.177 18.7822 8.70173C18.3227 8.19062 17.6102 7.94331 16.9342 7.96911H13.7034C13.7084 9.35764 13.7084 10.7404 13.7034 12.1268L16.4288 12.129Z" fill="#149F49"/>
+                          <path d="M17.4353 20.8001C18.3435 20.8101 19.2776 20.6969 20.1191 20.3356C20.9607 19.9743 21.7134 19.3808 22.1629 18.5808C22.8181 17.4403 22.8338 15.9643 22.2245 14.7972C21.7808 13.9456 20.9858 13.3213 20.0984 12.9808C20.6718 12.6811 21.208 12.284 21.5586 11.737C22.1113 10.9678 22.1937 9.97143 22.0697 9.05817C21.9319 8.29489 21.5518 7.59632 20.9858 7.06605C20.1435 6.28684 18.9966 5.88899 17.8682 5.81659C15.0195 5.80655 12.1758 5.81157 9.33203 5.81659C9.33705 6.4725 9.3263 7.1277 9.33705 7.78863C9.70336 7.80368 10.0697 7.87107 10.3901 8.05673C11.0553 8.39222 11.484 9.09974 11.5564 9.83236C11.5911 10.4362 11.3849 11.0291 10.9829 11.4811C10.5643 11.9406 9.95569 12.2295 9.33418 12.2037C9.3392 12.8023 9.33418 13.4008 9.3392 14.0051C9.77289 14.0359 10.2166 14.1342 10.5729 14.3922C11.2231 14.8101 11.5944 15.5894 11.5586 16.3535C11.5864 16.7482 11.5154 17.1436 11.3521 17.5041C11.0009 18.2732 10.1858 18.8152 9.33418 18.8001C9.3392 19.4653 9.33418 20.1313 9.33418 20.7972L17.4353 20.8001ZM19.6804 16.8876C19.6017 17.2436 19.434 17.5738 19.1929 17.8474C18.9518 18.1209 18.6452 18.3289 18.3019 18.4517C17.7966 18.6424 17.2489 18.6223 16.7177 18.6223C15.7141 18.6223 14.7148 18.6166 13.7134 18.6274C13.7034 17.1148 13.7034 15.6025 13.7134 14.0904C14.5449 14.1062 15.3808 14.0954 16.2166 14.0954C16.7794 14.1005 17.3521 14.0696 17.9098 14.1578C18.4984 14.2761 19.0661 14.6015 19.3908 15.1177C19.7371 15.6338 19.7987 16.289 19.6804 16.8876ZM13.7034 7.96928H16.9342C17.6102 7.94347 18.3227 8.19078 18.7822 8.70189C19.2159 9.17716 19.3342 9.86318 19.231 10.4825C19.1177 11.2359 18.4776 11.8295 17.765 12.0309C17.3349 12.1707 16.8776 12.1191 16.4288 12.1291H13.7048C13.7084 10.7406 13.7084 9.35781 13.7034 7.96928Z" fill="white"/>
+                          <path d="M17.5793 24.0257C14.8287 24.0307 12.0825 24.0099 9.33556 24.0307C9.31979 24.7475 9.31979 25.4644 9.33556 26.1776C11.9628 26.1984 14.5893 26.1834 17.2166 26.1884C19.0338 26.1834 20.8503 26.1984 22.6646 26.1776C22.6804 25.4658 22.6804 24.7482 22.6646 24.0307C20.9707 24.0099 19.2725 24.0307 17.5793 24.0257Z" fill="#73C692"/>
+                          </svg>
+                        </div>
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Bitstamp
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          15m · 30m · 1h · 4h · 1d
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badges -->
+                        <span class="badge badge-lg bg-success-soft">
+                          Bull
+                        </span>
+                        <span class="badge badge-lg bg-danger-soft">
+                          Bear
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <div class="icon icon-sm">
+                          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="16" cy="16" r="16" fill="#0F1821"/>
+                          <path d="M8.02515 7.625H12.1501V24.375H8.02515V7.625Z" fill="#0E70E2"/>
+                          <path d="M13.9001 3.875H18.0251V28.125H13.9001V3.875Z" fill="#0E70E2"/>
+                          <path d="M19.7751 7.625H23.9001V24.375H19.7751V7.625Z" fill="#0E70E2"/>
+                          </svg>
+                        </div>
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Coinbase Pro
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          15m · 30m · 1h · 4h · 1d
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badges -->
+                        <span class="badge badge-lg bg-success-soft">
+                          Bull
+                        </span>
+                        <span class="badge badge-lg bg-danger-soft">
+                          Bear
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </main>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark-transparent-75">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="py-8 py-md-11 bg-dark-transparent-75">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+    
+            <!-- Brand -->
+            <img src="../assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2">
+    
+            <!-- Text -->
+            <p class="text-gray-700 mb-2">
+              Proven, consistent cryptocurrency alerts.
+            </p>
+    
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social mt-5 mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="../assets/img/icons/social/discord.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="../assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="../assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="#!" class="text-decoration-none">
+                  <img src="../assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+    
+            <!-- Heading -->
+            <h6 class="fw-bold text-uppercase text-gray-700">
+              Product
+            </h6>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="../alerts.html" class="text-reset">
+                  Alerts
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="../pricing.html" class="text-reset">
+                  Pricing
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+    
+            <!-- Heading -->
+            <h6 class="fw-bold text-uppercase text-gray-700">
+              Support
+            </h6>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="../faq.html" class="text-reset">
+                  FAQ
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="../contact.html" class="text-reset">
+                  Contact
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+    
+            <!-- Heading -->
+            <h6 class="fw-bold text-uppercase text-gray-700">
+              Connect
+            </h6>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Discord
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Instagram
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Twitter
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Facebook
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+    
+            <!-- Heading -->
+            <h6 class="fw-bold text-uppercase text-gray-700">
+              Legal
+            </h6>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="../terms-of-service.html" class="text-reset">
+                  Terms of Service
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="../privacy-policy.html" class="text-reset">
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+        </div> <!-- / .row -->
+        <div class="row mt-6">
+          <div class="col-12">
+            <small class="text-gray-700">
+              Any advisory or signal generated by Coinflow LLC or any of its products is provided for educational purposes only. Any trades placed upon reliance on Coinflow systems are taken at your own risk for your own account. Past performance is no guarantee of future results. While there is great potential for reward trading securities and options there is also substantial risk of loss in all trading. You must decide your own suitability to trade. Future trading results can never be guaranteed. This is not an offer to buy or sell futures, options or commodity interests. Coinflow LLC is not registered as an investment adviser with any federal or state regulatory agency. The information contained within this website, including e-mail transmissions, faxes, recorded voice messages, and any other associated messages or media (hereinafter collectively referred to as “Information”) is provided for informational and educational purposes only. The Information should not be construed as investment / trading advice and is not meant to be a solicitation or recommendation to buy, sell, or hold any securities mentioned.
+            </small>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    
+    <!-- Vendor JS -->
+    <script src="../assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="../assets/js/theme.bundle.js"></script>
+
+  </div>
+  </body>
+</html>

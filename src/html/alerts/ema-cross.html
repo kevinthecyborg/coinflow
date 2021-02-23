@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> partials/head title="EMA Cross Alert - Coinflow"}}
+  </head>
+  <body class="jarallax bg-pattern-stars-gradient" data-jarallax data-speed=".8">
+  <div class="jarallax bg-pattern-stars-big" data-jarallax data-speed=".6">
+
+    <!-- NAVBAR -->
+    {{> partials/navbar classList="navbar-dark bg-dark-transparent-75" container="container-fluid" button="primary"}}
+
+    <!-- BREADCRUMB -->
+    <nav class="bg-dark d-md-none">
+      <div class="container-md">
+        <div class="row align-items-center">
+          <div class="col">
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <span class="text-white">
+                  Alerts
+                </span>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <span class="text-white">
+                  EMA Cross
+                </span>
+              </li>
+            </ol>
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Toggler -->
+            <div class="navbar-dark">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </nav>
+
+    <!-- HEADER -->
+    <header class="pt-9 pb-11 d-none d-md-block">
+      <div class="container-md">
+        <div class="row align-items-center">
+          <div class="col">
+
+            <!-- Heading -->
+            <h1 class="fw-bold text-white mb-2">
+              EMA Cross
+            </h1>
+
+            <!-- Text -->
+            <p class="fs-lg text-white-75 mb-0">
+              Get alerted when RSI crosses below 30 or above 70.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </header>
+
+    <!-- MAIN -->
+    <main class="pb-8 pb-md-11 mt-md-n6">
+      <div class="container-md">
+        <div class="row">
+
+          <!-- Left Nav -->
+          {{> partials/left-nav}}
+
+          <!-- Content-->
+          <div class="col-12 col-md-9">
+
+            <!-- Card -->
+            <div class="card card-bleed shadow-light-lg bg-dark mb-6">
+              <div class="card-header">
+
+                <!-- Heading -->
+                <h4 class="mb-0">
+                  About EMA Cross
+                </h4>
+
+              </div>
+              <div class="card-body">
+
+                <p class="text-muted">
+                  This alert fires when two of Crypto’s most significant Exponential Moving Averages (EMAs) cross over either bullish or bearish.
+                </p>
+                <p class="text-muted">
+                  EMA crosses tend to confirm or foreshadow trend changes, therefore they are often used as entry and exit signals when they do occur. They are also very useful for oversold bounce traders because an EMA cross on a shorter timeframe can signal to zoom out to a longer timeframe and watch for the signal to occur there too.
+                </p>
+
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card card-bleed bg-dark shadow-light-lg">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Heading -->
+                    <h4 class="mb-0">
+                      Exchange Compatibility
+                    </h4>
+
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <div class="icon icon-sm">
+                          {{> logomark/binance-mark}}
+                        </div>
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Binance
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          15m · 30m · 1h · 4h · 1d
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badges -->
+                        <span class="badge badge-lg bg-success-soft">
+                          Bull
+                        </span>
+                        <span class="badge badge-lg bg-danger-soft">
+                          Bear
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <div class="icon icon-sm">
+                          {{> logomark/bitfinex-mark}}
+                        </div>
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Bitfinex
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          15m · 30m · 1h · 4h · 1d
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badges -->
+                        <span class="badge badge-lg bg-success-soft">
+                          Bull
+                        </span>
+                        <span class="badge badge-lg bg-danger-soft">
+                          Bear
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <div class="icon icon-sm">
+                          {{> logomark/bitstamp-mark}}
+                        </div>
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Bitstamp
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          15m · 30m · 1h · 4h · 1d
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badges -->
+                        <span class="badge badge-lg bg-success-soft">
+                          Bull
+                        </span>
+                        <span class="badge badge-lg bg-danger-soft">
+                          Bear
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <div class="icon icon-sm">
+                          {{> logomark/coinbase-pro-mark}}
+                        </div>
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Coinbase Pro
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          15m · 30m · 1h · 4h · 1d
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badges -->
+                        <span class="badge badge-lg bg-success-soft">
+                          Bull
+                        </span>
+                        <span class="badge badge-lg bg-danger-soft">
+                          Bear
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </main>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark-transparent-75">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    {{> partials/footer classList="bg-dark-transparent-75"}}
+
+    <!-- JAVASCRIPT -->
+    {{> partials/scripts}}
+
+  </div>
+  </body>
+</html>

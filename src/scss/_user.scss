@@ -10,6 +10,9 @@
 .text-black {
   color: $black-1 !important;
 }
+.text-dark-transparent-75 {
+  color: rgba(3,6,14,0.75);
+}
 .bg-gradient-multicolor {
   background-image: conic-gradient(from 80deg at 50% 50%,
       #0F1C46 0deg,
@@ -25,6 +28,12 @@
 }
 .opacity-10 {
   opacity: 0.1;
+}
+.text-primary-dark {
+  color: darken($primary, 50%);
+}
+.bg-primary-dark {
+  background-color: darken($primary, 50%);
 }
 
 // NAVBAR
@@ -82,6 +91,15 @@ footer img.footer-brand {
   background-color: #0B1530;
 }
 
+// CARDS
+.bg-dark .card-header,
+.list-group-item.bg-dark,
+.form-control.bg-dark {
+  border-color: #111;
+}
+.border-111 {
+  border: 1px solid #111;
+}
 
 
 

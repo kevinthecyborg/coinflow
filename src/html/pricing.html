@@ -1,23 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {{> partials/head title="Landkit"}}
+    {{> partials/head title="Pricing - Coinflow"}}
   </head>
-  <body class="pt-10 bg-light">
-
-    <!-- MODALS -->
-    {{> partials/modals}}
+  <body class="jarallax bg-pattern-stars-gradient" data-jarallax data-speed=".8">
+  <div class="jarallax bg-pattern-stars-big" data-jarallax data-speed=".6">
 
     <!-- NAVBAR -->
-    {{> partials/navbar classList="navbar-light fixed-top bg-white border-bottom" container="container-fluid" button="primary"}}
+    {{> partials/navbar classList="navbar-dark bg-dark-transparent-75" container="container-fluid" button="primary"}}
 
     <!-- WELCOME -->
-    <section class="pt-8 pt-md-11 pb-10 pb-md-15 bg-primary">
-
-      <!-- Shape -->
-      <div class="shape shape-blur-3 svg-shim text-white">
-        {{> blurs/blur-3}}
-      </div>
+    <section class="position-relative pt-8 pt-md-11 pb-10 pb-md-15">
 
       <!-- Content -->
       <div class="container">
@@ -26,19 +19,19 @@
 
             <!-- Heading -->
             <h1 class="display-2 text-white">
-              Simple, fair pricing.
+              Choose your fighter.
             </h1>
 
             <!-- Text -->
-            <p class="lead text-white-80 mb-6 mb-md-8">
-              All types of businesses need access to development resources, so we give you the option to decide how much you need to use.
+            <p class="lead text-muted mb-6 mb-md-8">
+              Whether you're a beginner or expert trader, we have plans that work for everyone. Save $240/year on our annual plans for a limited-time only.
             </p>
 
             <!-- Form -->
             <form class="d-flex align-items-center justify-content-center mb-7 mb-md-9">
 
               <!-- Label -->
-              <span class="text-white-80">
+              <span class="text-primary-desat">
                 Annual
               </span>
 
@@ -48,7 +41,7 @@
               </div>
 
               <!-- Label -->
-              <span class="text-white-80">
+              <span class="text-primary-desat">
                 Monthly
               </span>
 
@@ -60,13 +53,6 @@
 
     </section>
 
-    <!-- SHAPE -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
-        {{> curves/curve-1}}
-      </div>
-    </div>
-
     <!-- PRICING -->
     <section class="mt-n8 mt-md-n14">
       <div class="container">
@@ -74,13 +60,13 @@
           <div class="col-12 col-md-4">
 
             <!-- Card -->
-            <div class="card shadow-lg mb-6 mb-md-0">
+            <div class="card bg-dark-transparent-75 shadow-lg mb-6 mb-md-0">
               <div class="card-body">
 
                 <!-- Preheading -->
                 <div class="text-center mb-3">
                   <span class="badge rounded-pill bg-primary-soft">
-                    <span class="h6 text-uppercase">Basic</span>
+                    <span class="h6 text-uppercase">Karen</span>
                   </span>
                 </div>
 
@@ -93,7 +79,7 @@
 
                 <!-- Text -->
                 <p class="text-center text-muted mb-5">
-                  per seat
+                  free forever
                 </p>
 
                 <!-- List -->
@@ -106,7 +92,7 @@
 
                   <!-- Text -->
                   <p>
-                    Rich landing pages
+                    Web & mobile app
                   </p>
 
                 </div>
@@ -119,7 +105,105 @@
 
                   <!-- Text -->
                   <p class="mb-5">
-                    100+ components
+                    Real-time alert notifications
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Access to Basic alerts
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-danger-soft mt-1 me-4">
+                    <i class="fe fe-x"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Access to Advanced alerts
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-danger-soft mt-1 me-4">
+                    <i class="fe fe-x"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Access to Premium alerts
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-danger-soft mt-1 me-4">
+                    <i class="fe fe-x"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    All timeframes
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Email support
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-danger-soft mt-1 me-4">
+                    <i class="fe fe-x"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Phone support
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Free forever
                   </p>
 
                 </div>
@@ -136,13 +220,13 @@
           <div class="col-12 col-md-4">
 
             <!-- Card -->
-            <div class="card shadow-lg mb-6 mb-md-0">
+            <div class="card bg-dark-transparent-75 shadow-lg mb-6 mb-md-0">
               <div class="card-body">
 
                 <!-- Preheading -->
                 <div class="text-center mb-3">
                   <span class="badge rounded-pill bg-primary-soft">
-                    <span class="h6 text-uppercase">Standard</span>
+                    <span class="h6 text-uppercase">Joe</span>
                   </span>
                 </div>
 
@@ -155,7 +239,7 @@
 
                 <!-- Text -->
                 <p class="text-center text-muted mb-5">
-                  per seat
+                  free 7-day trial
                 </p>
 
                 <!-- List -->
@@ -168,46 +252,7 @@
 
                   <!-- Text -->
                   <p>
-                    Rich landing pages
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    100+ components
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    Flexible licensing
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    Speedy build tooling
+                    Web & mobile app
                   </p>
 
                 </div>
@@ -220,14 +265,112 @@
 
                   <!-- Text -->
                   <p class="mb-5">
-                    6 months free support
+                    Real-time alert notifications
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Access to Basic alerts
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Access to Advanced alerts
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-danger-soft mt-1 me-4">
+                    <i class="fe fe-x"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Access to Premium alerts
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    All timeframes
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Email support
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-danger-soft mt-1 me-4">
+                    <i class="fe fe-x"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Phone support
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Cancel anytime
                   </p>
 
                 </div>
 
                 <!-- Button -->
                 <a href="#!" class="btn w-100 btn-primary">
-                  Start with Standard <i class="fe fe-arrow-right ms-3"></i>
+                  Start 7-day trial <i class="fe fe-arrow-right ms-3"></i>
                 </a>
 
               </div>
@@ -237,26 +380,26 @@
           <div class="col-12 col-md-4">
 
             <!-- Card -->
-            <div class="card shadow-lg mb-md-0">
+            <div class="card bg-dark-transparent-75 shadow-lg mb-md-0">
               <div class="card-body">
 
                 <!-- Preheading -->
                 <div class="text-center mb-3">
                   <span class="badge rounded-pill bg-primary-soft">
-                    <span class="h6 text-uppercase">Premium</span>
+                    <span class="h6 text-uppercase">Elon</span>
                   </span>
                 </div>
 
                 <!-- Price -->
                 <div class="d-flex justify-content-center">
                   <span class="h2 mb-0 mt-2">$</span>
-                  <span class="price display-2 mb-0" data-annual="49" data-monthly="69">49</span>
+                  <span class="price display-2 mb-0" data-annual="79" data-monthly="99">79</span>
                   <span class="h2 align-self-end mb-1">/mo</span>
                 </div>
 
                 <!-- Text -->
                 <p class="text-center text-muted mb-5">
-                  per seat
+                  free 7-day trial
                 </p>
 
                 <!-- List -->
@@ -269,85 +412,7 @@
 
                   <!-- Text -->
                   <p>
-                    Rich landing pages
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    100+ components
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    Flexible licensing
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    Speedy build tooling
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    6 months free support
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    256-bit encryption
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    Guaranteed 100% uptime
+                    Web & mobile app
                   </p>
 
                 </div>
@@ -360,14 +425,112 @@
 
                   <!-- Text -->
                   <p class="mb-5">
-                    Unlimited users
+                    Real-time alert notifications
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Access to Basic alerts
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Access to Advanced alerts
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Access to Premium alerts
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    All timeframes
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Email support
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Phone support
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    Cancel anytime
                   </p>
 
                 </div>
 
                 <!-- Button -->
-                <a href="#!" class="btn w-100 btn-primary-soft">
-                  Start with Premium <i class="fe fe-arrow-right ms-3"></i>
+                <a href="#!" class="btn w-100 btn-primary">
+                  Start 7-day trial <i class="fe fe-arrow-right ms-3"></i>
                 </a>
 
               </div>
@@ -386,17 +549,17 @@
 
             <!-- Badge -->
             <span class="badge rounded-pill bg-primary-desat-soft mb-3">
-              <span class="h6 text-uppercase">Enterprise</span>
+              <span class="h6 text-uppercase">No Risk</span>
             </span>
 
             <!-- Heading -->
             <h2>
-              Business grade quality <span class="fw-bold text-primary-desat">for all plans</span>.
+              Free 7-day trials <span class="fw-bold text-primary-desat">for both paid plans</span>.
             </h2>
 
             <!-- Text -->
             <p class="fs-lg text-muted mb-7 mb-md-9">
-              Build a beautiful, modern website with our flexible Bootstrap components all built from scratch.
+              Get started with our free Karen plan, or try a free 7-day trial of the Joe and Elon plans. No contracts, cancel anytime.
             </p>
 
           </div>
@@ -406,17 +569,17 @@
 
             <!-- Icon -->
             <div class="icon text-primary mb-3">
-              {{> general/settings-1}}
+              {{> shopping/chart-line-1}}
             </div>
 
             <!-- Heading -->
             <h3>
-              Built for developers
+              Winning Buy/Sell Signals
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
-              Landkit is built to make your life easier. Variables, build tooling, documentation, and reusable components.
+              Our proprietary alerts will give you the edge in the cryptocurrency markets.
             </p>
 
           </div>
@@ -424,17 +587,17 @@
 
             <!-- Icon -->
             <div class="icon text-primary mb-3">
-              {{> layout/layout-arrange}}
+              {{> home/clock}}
             </div>
 
             <!-- Heading -->
             <h3>
-              Designed to be modern
+              24/7 Monitoring
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
-              Designed with the latest design trends in mind. Landkit feels modern, minimal, and beautiful.
+              We keep an eye on the charts for you around the clock - crypto never sleeps!
             </p>
 
           </div>
@@ -442,17 +605,17 @@
 
             <!-- Icon -->
             <div class="icon text-primary mb-3">
-              {{> code/code}}
+              {{> general/thunder-move}}
             </div>
 
             <!-- Heading -->
             <h3>
-              Documentation for everything
+              Instant Notifications
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-0">
-              We've written extensive documentation for components and tools, so you never have to reverse engineer anything.
+              Receive instant push notification alerts on your phone, watch, or computer.
             </p>
 
           </div>
@@ -460,15 +623,8 @@
       </div> <!-- / .container -->
     </section>
 
-    <!-- SHAPE -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-        {{> curves/curve-1}}
-      </div>
-    </div>
-
     <!-- FAQ -->
-    <section class="py-8 py-md-11 bg-white border-bottom">
+    <section class="py-8 py-md-11">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-md-8 text-center">
@@ -570,9 +726,9 @@
             <!-- Blockquote -->
             <blockquote class="blockquote text-center">
 
-              <!-- Logo -->
-              <div class="img-fluid mb-5 mb-md-7 svg-shim mx-auto " style="max-width: 120px; color: #FF5A5F;">
-                {{> logotype/airbnb}}
+              <!-- Icon -->
+              <div class="icon text-primary mb-3">
+                {{> text/quote-1}}
               </div>
 
               <!-- Text -->
@@ -596,9 +752,9 @@
             <!-- Blockquote -->
             <blockquote class="blockquote text-center">
 
-              <!-- Logo -->
-              <div class="img-fluid mb-5 mb-md-7 mx-auto svg-shim" style="max-width: 120px; color: #CB2027;">
-                {{> logotype/pinterest}}
+              <!-- Icon -->
+              <div class="icon text-primary mb-3">
+                {{> text/quote-1}}
               </div>
 
               <!-- Text -->
@@ -620,11 +776,19 @@
       </div> <!-- / .container -->
     </section>
 
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark-transparent-75">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
     <!-- FOOTER -->
-    {{> partials/footer classList="bg-dark"}}
+    {{> partials/footer classList="bg-dark-transparent-75"}}
 
     <!-- JAVASCRIPT -->
     {{> partials/scripts}}
 
+  </div>
   </body>
 </html>

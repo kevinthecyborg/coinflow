@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> partials/head title="Pennant Flag Alert - Coinflow"}}
+  </head>
+  <body class="jarallax bg-pattern-stars-gradient" data-jarallax data-speed=".8">
+  <div class="jarallax bg-pattern-stars-big" data-jarallax data-speed=".6">
+
+    <!-- NAVBAR -->
+    {{> partials/navbar classList="navbar-dark bg-dark-transparent-75" container="container-fluid" button="primary"}}
+
+    <!-- BREADCRUMB -->
+    <nav class="bg-dark d-md-none">
+      <div class="container-md">
+        <div class="row align-items-center">
+          <div class="col">
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <span class="text-white">
+                  Alerts
+                </span>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <span class="text-white">
+                  Pennant Flag
+                </span>
+              </li>
+            </ol>
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Toggler -->
+            <div class="navbar-dark">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </nav>
+
+    <!-- HEADER -->
+    <header class="pt-9 pb-11 d-none d-md-block">
+      <div class="container-md">
+        <div class="row align-items-center">
+          <div class="col">
+
+            <!-- Heading -->
+            <h1 class="fw-bold text-white mb-2">
+              Pennant Flag
+            </h1>
+
+            <!-- Text -->
+            <p class="fs-lg text-white-75 mb-0">
+              Pinpoint when a swing is about to happen in the opposite direction.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </header>
+
+    <!-- MAIN -->
+    <main class="pb-8 pb-md-11 mt-md-n6">
+      <div class="container-md">
+        <div class="row">
+
+          <!-- Left Nav -->
+          {{> partials/left-nav}}
+
+          <!-- Content-->
+          <div class="col-12 col-md-9">
+
+            <!-- Card -->
+            <div class="card card-bleed shadow-light-lg bg-dark mb-6">
+              <div class="card-header">
+
+                <!-- Heading -->
+                <h4 class="mb-0">
+                  About Pennant Flag
+                </h4>
+
+              </div>
+              <div class="card-body">
+
+                <p class="text-muted">
+                  Another valuable ‘heads-up’ indicator which alerts you to the fact that a pennant flag may be forming. An pennant flag pattern is a tightening consolidation pattern that often follows a big move in either direction as the price tries to stabilize in a new territory. On the chart, pennants are represented by a series of lower highs and higher lows, resembling a triangle shape with the price action tightening towards the apex.
+                </p>
+                <p class="text-muted">
+                  It is often observed that the longer a chart stays within a tightening pennant, forming inside bars on the larger timeframes as it does so, the stronger the breakout move tends to be once it happens. The analogy often used by traders is that of a coiled up spring which gets compressed so much that when it is finally released, the move can be explosive.
+                </p>
+                <p class="text-muted">
+                  This alert will tell you to keep an eye on this particular chart and maybe plan your entry/exit strategy, because a bigger move might be coming and you’ll be ready for it.
+                </p>
+                <p class="text-muted">
+                  Use this alert in conjunction with the Inside Bar Break and Abnormal Volume to be alerted as soon as there’s price action signalling the break of this pattern.
+                </p>
+
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card card-bleed bg-dark shadow-light-lg">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Heading -->
+                    <h4 class="mb-0">
+                      Exchange Compatibility
+                    </h4>
+
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <div class="icon icon-sm">
+                          {{> logomark/binance-mark}}
+                        </div>
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Binance
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          15m · 30m · 1h · 4h · 1d
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badges -->
+                        <span class="badge badge-lg bg-success-soft">
+                          Bull
+                        </span>
+                        <span class="badge badge-lg bg-danger-soft">
+                          Bear
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <div class="icon icon-sm">
+                          {{> logomark/bitfinex-mark}}
+                        </div>
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Bitfinex
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          15m · 30m · 1h · 4h · 1d
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badges -->
+                        <span class="badge badge-lg bg-success-soft">
+                          Bull
+                        </span>
+                        <span class="badge badge-lg bg-danger-soft">
+                          Bear
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <div class="icon icon-sm">
+                          {{> logomark/bitstamp-mark}}
+                        </div>
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Bitstamp
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          15m · 30m · 1h · 4h · 1d
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badges -->
+                        <span class="badge badge-lg bg-success-soft">
+                          Bull
+                        </span>
+                        <span class="badge badge-lg bg-danger-soft">
+                          Bear
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <div class="icon icon-sm">
+                          {{> logomark/coinbase-pro-mark}}
+                        </div>
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Coinbase Pro
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          15m · 30m · 1h · 4h · 1d
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badges -->
+                        <span class="badge badge-lg bg-success-soft">
+                          Bull
+                        </span>
+                        <span class="badge badge-lg bg-danger-soft">
+                          Bear
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </main>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark-transparent-75">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    {{> partials/footer classList="bg-dark-transparent-75"}}
+
+    <!-- JAVASCRIPT -->
+    {{> partials/scripts}}
+
+  </div>
+  </body>
+</html>

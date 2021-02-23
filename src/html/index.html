@@ -6,11 +6,8 @@
   <body class="jarallax bg-pattern-stars-gradient" data-jarallax data-speed=".8">
   <div class="jarallax bg-pattern-stars-big" data-jarallax data-speed=".6">
 
-    <!-- MODALS -->
-    {{> partials/modals}}
-
     <!-- NAVBAR -->
-    {{> partials/navbar classList="navbar-dark" container="container-fluid" button="primary"}}
+    {{> partials/navbar classList="navbar-dark bg-dark-transparent-75" container="container-fluid" button="primary"}}
 
     <!-- WELCOME -->
     <section class="position-relative pt-8 pb-8 pt-md-14 pb-md-11">
@@ -44,7 +41,7 @@
             </p>
 
             <!-- Buttons -->
-            <a href="{{webRoot}}/get-started.html" class="btn btn-primary me-1 lift">
+            <a href="{{webRoot}}/sign-up.html" class="btn btn-primary me-1 lift">
               Get started free <i class="fe fe-arrow-right ms-3"></i>
             </a>
             <a href="#features" class="btn btn-primary-soft lift" data-scroll='{"offset": 0}'>
@@ -97,13 +94,6 @@
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
-
-    <!-- SHAPE
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
-        {{> curves/curve-1}}
-      </div>
-    </div> -->
 
     <!-- FEATURES -->
     <section class="py-8 py-md-11" id="features">
@@ -300,7 +290,7 @@
     <section class="pt-8 pt-md-11">
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <div class="col-12 col-md-6 col-lg-5">
+          <div class="col-12 col-md-6 col-lg-5" data-aos="fade-right">
 
             <!-- Heading -->
             <h2 class="display-3 fw-bold text-white mb-6 mb-md-8">
@@ -318,7 +308,7 @@
             </p>
 
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6" data-aos="fade-left">
 
             <!-- Media -->
             <div class="position-relative vw-md-50 pt-7 ps-7 ps-md-9 overflow-hidden" style="max-width: 800px;">
@@ -340,7 +330,7 @@
     <section class="pt-8 pt-md-11">
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <div class="col-12 col-md-6 col-lg-5 order-md-1">
+          <div class="col-12 col-md-6 col-lg-5 order-md-1" data-aos="fade-left">
 
             <!-- Heading -->
             <h2 class="display-4 fw-bold text-white mb-6 mb-md-8">
@@ -358,7 +348,7 @@
             </p>
 
           </div>
-          <div class="col-12 col-md-6 col-lg-6 order-md-0">
+          <div class="col-12 col-md-6 col-lg-6 order-md-0" data-aos="fade-right">
 
             <!-- Positioner -->
             <div class="position-relative">
@@ -374,59 +364,12 @@
 
               </div>
 
-              <!-- Icon
-              <img class="img-fluid position-absolute top-0 end-0 mt-n5 me-n5" src="assets/img/icons/figma-dark-circle.png" alt="..."> -->
-
             </div>
 
           </div>
         </div> <!-- / .row -->
       </div>
     </section>
-
-    <!-- PLACEMENT RATES -->
-    <section class="py-10 py-md-11">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-8 col-lg-6">
-
-            <!-- Preheading -->
-            <h6 class="text-uppercase text-primary">
-              Real-time market signals
-            </h6>
-
-            <!-- Heading -->
-            <h2 class="display-3 fw-bold text-white">
-              Level up your trading strategy today.
-            </h2>
-
-            <!-- Text -->
-            <p class="text-muted lead mb-6 mb-md-8">
-              We've made it easier for thousands of people to build their wealth through crypto.
-            </p>
-
-            <!-- Button -->
-            <a href="{{webRoot}}/get-started.html" class="btn btn-primary lift">
-              Get started free <i class="fe fe-arrow-right ms-2"></i>
-            </a>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- IMAGE
-    <section class="py-14 py-lg-16 jarallax" data-jarallax data-speed=".8" style="background-image: url(assets/img/covers/cover-19.jpg);">
-
-      <div class="shape shape-top shape-fluid-x svg-shim text-black bg-pattern-stars-1" data-jarallax data-speed=".8">
-        {{> angles/angle-top}}
-      </div>
-
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-black">
-        {{> angles/angle-bottom}}
-      </div>
-
-    </section> -->
 
     <!-- CTA -->
     <section class="py-10 py-md-14">
@@ -450,7 +393,7 @@
             </p>
 
             <!-- Button -->
-            <a href="{{webRoot}}/get-started.html" class="btn btn-primary lift">
+            <a href="{{webRoot}}/sign-up.html" class="btn btn-primary lift">
               Get started free <i class="fe fe-arrow-right ms-2"></i>
             </a>
 
@@ -459,12 +402,19 @@
       </div> <!-- / .container -->
     </section>
 
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark-transparent-75">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
     <!-- FOOTER -->
-    {{> partials/footer classList=""}}
+    {{> partials/footer classList="bg-dark-transparent-75"}}
 
     <!-- JAVASCRIPT -->
     {{> partials/scripts}}
 
-  </div> <!-- stars 2 bg -->
+  </div>
   </body>
 </html>
