@@ -1,7 +1,7 @@
-<div class="col-12 col-md-3">
+<div class="col-12 col-md-4 left-nav">
 
   <!-- Card -->
-  <div class="card card-bleed border-bottom border-bottom-md-0 bg-dark shadow-light-lg">
+  <div class="card card-bleed bg-dark shadow-dark-lg">
 
     <!-- Collapse -->
     <div class="collapse d-md-block" id="sidenavCollapse">
@@ -14,18 +14,21 @@
 
         <!-- List -->
         <ul class="card-list list text-gray-700 mb-6">
-          <li class="list-item active">
+          <li class="list-item">
             <a class="list-link text-reset" href="{{webRoot}}/alerts/superflow.html">
+              <span class="fe fe-activity text-primary me-2"></span>
               SuperFlow
             </a>
           </li>
           <li class="list-item">
             <a class="list-link text-reset" href="{{webRoot}}/alerts/overbought-oversold.html">
+              <span class="fe fe-arrow-up text-primary me-2"></span>
               Overbought/Oversold
             </a>
           </li>
           <li class="list-item">
             <a class="list-link text-reset" href="{{webRoot}}/alerts/pennant-flag.html">
+              <span class="fe fe-play text-primary me-2"></span>
               Pennant Flag
             </a>
           </li>
@@ -40,21 +43,25 @@
         <ul class="card-list list text-gray-700 mb-6">
           <li class="list-item">
             <a class="list-link text-reset" href="{{webRoot}}/alerts/rsi-cross.html">
+              <span class="fe fe-shuffle text-primary me-2"></span>
               RSI Cross
             </a>
           </li>
           <li class="list-item">
             <a class="list-link text-reset" href="{{webRoot}}/alerts/price-shear.html">
+              <span class="fe fe-trending-up text-primary me-2"></span>
               Price Shear
             </a>
           </li>
           <li class="list-item">
             <a class="list-link text-reset" href="{{webRoot}}/alerts/volume-breakout.html">
+              <span class="fe fe-chevrons-up text-primary me-2"></span>
               Volume + Breakout
             </a>
           </li>
           <li class="list-item">
             <a class="list-link text-reset" href="{{webRoot}}/alerts/inside-bar-break.html">
+              <span class="fe fe-arrow-up-right text-primary me-2"></span>
               Inside Bar Break
             </a>
           </li>
@@ -69,21 +76,25 @@
         <ul class="card-list list text-gray-700 mb-0">
           <li class="list-item">
             <a class="list-link text-reset" href="{{webRoot}}/alerts/golden-death-cross.html">
+              <span class="fe fe-shuffle text-primary me-2"></span>
               Golden/Death Cross
             </a>
           </li>
           <li class="list-item">
             <a class="list-link text-reset" href="{{webRoot}}/alerts/macd-cross.html">
+              <span class="fe fe-shuffle text-primary me-2"></span>
               MACD Cross
             </a>
           </li>
           <li class="list-item">
             <a class="list-link text-reset" href="{{webRoot}}/alerts/ema-cross.html">
+              <span class="fe fe-shuffle text-primary me-2"></span>
               EMA Cross
             </a>
           </li>
           <li class="list-item">
             <a class="list-link text-reset" href="{{webRoot}}/alerts/abnormal-volume.html">
+              <span class="fe fe-bar-chart text-primary me-2"></span>
               Abnormal Volume
             </a>
           </li>
@@ -95,3 +106,9 @@
   </div>
 
 </div>
+<script type="text/javascript">
+  $( '.left-nav .list-item a' ).on( 'click', function () {
+	  $( '.left-nav .list-item' ).find( 'li.active' ).removeClass( 'active' );
+	$( this ).parent( 'li' ).addClass( 'active' );
+});
+</script>

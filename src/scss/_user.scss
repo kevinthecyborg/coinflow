@@ -90,11 +90,23 @@ footer img.footer-brand {
 .form-check-dark .form-check-input {
   background-color: #0B1530;
 }
+.form-control.bg-black {
+  border-color: #222;
+}
+.form-control:active.bg-black,
+.form-control:focus.bg-black,
+.form-control:active.bg-dark,
+.form-control:focus.bg-dark {
+  border-color: $primary;
+}
+.form-control.bg-dark {
+  border-color: #111;
+}
+
 
 // CARDS
 .bg-dark .card-header,
-.list-group-item.bg-dark,
-.form-control.bg-dark {
+.list-group-item.bg-dark {
   border-color: #111;
 }
 .border-111 {

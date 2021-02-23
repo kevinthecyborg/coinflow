@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> partials/head title="Billing - Coinflow"}}
+  </head>
+  <body class="jarallax bg-pattern-stars-gradient" data-jarallax data-speed=".8">
+  <div class="jarallax bg-pattern-stars-big" data-jarallax data-speed=".6">
+
+    <!-- MODALS -->
+    {{> partials/modals}}
+
+    <!-- NAVBAR -->
+    {{> partials/navbar classList="navbar-dark bg-dark-transparent-75" container="container-fluid" button="primary"}}
+
+    <!-- BREADCRUMB -->
+    <nav class="d-md-none">
+      <div class="container-md">
+        <div class="row align-items-center">
+          <div class="col">
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <span class="text-white">
+                  Billing
+                </span>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <span class="text-white">
+                  Plan & Payment
+                </span>
+              </li>
+            </ol>
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Toggler -->
+            <div class="navbar-dark">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </nav>
+
+    <!-- HEADER -->
+    <header class="pt-9 pb-11 d-none d-md-block">
+      <div class="container-md">
+        <div class="row align-items-center">
+          <div class="col">
+
+            <!-- Heading -->
+            <h1 class="fw-bold text-white mb-2">
+              Account Settings
+            </h1>
+
+            <!-- Text -->
+            <p class="fs-lg text-white-75 mb-0">
+              Settings for kevin@coinflow.ai
+            </p>
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Button -->
+            <button class="btn btn-sm btn-gray-300-20">
+              Log Out
+            </button>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </header>
+
+    <!-- MAIN -->
+    <main class="pb-8 pb-md-11 mt-md-n6">
+      <div class="container-md">
+        <div class="row">
+
+          <!-- Left Nav -->
+          {{> partials/left-nav-account}}
+
+          <div class="col-12 col-md-9">
+
+            <!-- Card -->
+            <div class="card card-bleed bg-dark shadow-light-lg mb-6">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Heading -->
+                    <h4 class="mb-0">
+                      Current Plan
+                    </h4>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Price -->
+                    <span class="h4 fw-bold">
+                      $99/mo
+                    </span>
+
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+
+                <!-- Header -->
+                <div class="row mb-5">
+                  <div class="col">
+
+                    <!-- Heading -->
+                    <h4 class="mb-0">
+                      Elon Plan
+                    </h4>
+
+                    <!-- Text -->
+                    <small class="text-gray-700">
+                      Next payment on 03/22/2021
+                    </small>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Button -->
+                    <a class="btn btn-xs btn-primary" href="pricing.html">
+                      Change plan
+                    </a>
+
+                  </div>
+                </div>
+
+                <dic class="row">
+                  <!-- Item -->
+                  <div class="col-12 col-lg-6">
+
+                    <div class="d-flex">
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                        <i class="fe fe-check"></i>
+                      </div>
+
+                      <!-- Text -->
+                      <p>
+                        <small>Web & mobile app</small>
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-12 col-lg-6">
+
+                    <div class="d-flex">
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                        <i class="fe fe-check"></i>
+                      </div>
+
+                      <!-- Text -->
+                      <p>
+                        <small>Real-time alert notifications</small>
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-12 col-lg-6">
+
+                    <div class="d-flex">
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                        <i class="fe fe-check"></i>
+                      </div>
+
+                      <!-- Text -->
+                      <p>
+                        <small>Access to Basic alerts</small>
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-12 col-lg-6">
+
+                    <div class="d-flex">
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                        <i class="fe fe-check"></i>
+                      </div>
+
+                      <!-- Text -->
+                      <p>
+                        <small>Access to Advanced alerts</small>
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-12 col-lg-6">
+
+                    <div class="d-flex">
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                        <i class="fe fe-check"></i>
+                      </div>
+
+                      <!-- Text -->
+                      <p>
+                        <small>Access to Premium alerts</small>
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-12 col-lg-6">
+
+                    <div class="d-flex">
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                        <i class="fe fe-check"></i>
+                      </div>
+
+                      <!-- Text -->
+                      <p>
+                        <small>All timeframes</small>
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-12 col-lg-6">
+
+                    <div class="d-flex">
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                        <i class="fe fe-check"></i>
+                      </div>
+
+                      <!-- Text -->
+                      <p>
+                        <small>Email support</small>
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-12 col-lg-6">
+
+                    <div class="d-flex">
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                        <i class="fe fe-check"></i>
+                      </div>
+
+                      <!-- Text -->
+                      <p>
+                        <small>Phone support</small>
+                      </p>
+                    </div>
+
+                  </div>
+
+                </dic>
+
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card card-bleed bg-dark shadow-light-lg mb-6">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Heading -->
+                    <h4 class="mb-0">
+                      Payment Methods
+                    </h4>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Button -->
+                    <button class="btn btn-xs btn-primary" data-bs-toggle="modal" data-bs-target="#modalPayment">
+                      Add new
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <img class="img-fluid" src="assets/img/icons/payment-methods/visa.svg" alt="..." style="max-width: 40px;">
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Visa ending in 1234
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          Expires 03/2024
+                        </small>
+
+                      </div>
+                      <div class="col-auto me-n5">
+
+                        <!-- Badge -->
+                        <span class="badge rounded-pill bg-secondary-soft">
+                          <span class="h6 text-uppercase fw-bold">Default</span>
+                        </span>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                          <a class="text-gray-400 text-decoration-none" data-bs-toggle="dropdown" href="#">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <img class="img-fluid" src="assets/img/icons/payment-methods/mastercard.svg" alt="..." style="max-width: 40px;">
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Mastercard ending in 1234
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          Expires 07/2026
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                          <a class="text-gray-400 text-decoration-none" data-bs-toggle="dropdown" href="#">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card card-bleed bg-dark shadow-light-lg">
+              <div class="card-header">
+
+                <!-- Heading -->
+                <h4 class="mb-0">
+                  Payment History
+                </h4>
+
+              </div>
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Invoice #91240
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          Billed 2/22/2021
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badge -->
+                        <span class="badge rounded-pill bg-success-soft">
+                          <span class="h6 text-uppercase fw-bold">Paid $99</span>
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Invoice #89283
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          Billed 1/22/2021
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badge -->
+                        <span class="badge rounded-pill bg-success-soft">
+                          <span class="h6 text-uppercase fw-bold">Paid $99</span>
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Invoice #89283
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          Billed 12/22/2020
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badge -->
+                        <span class="badge rounded-pill bg-success-soft">
+                          <span class="h6 text-uppercase fw-bold">Paid $99</span>
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-dark">
+                    <div class="row align-items-center">
+                      <div class="col">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Invoice #89283
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          Billed 11/22/2020
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badge -->
+                        <span class="badge rounded-pill bg-success-soft">
+                          <span class="h6 text-uppercase fw-bold">Paid $99</span>
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </main>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark-transparent-75">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    {{> partials/footer classList="bg-dark-transparent-75"}}
+
+    <!-- JAVASCRIPT -->
+    {{> partials/scripts}}
+
+  </div>
+  </body>
+</html>

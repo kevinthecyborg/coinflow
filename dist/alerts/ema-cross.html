@@ -46,8 +46,200 @@
     
           <!-- Navigation -->
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../alerts.html">Alerts</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarProduct" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Alerts
+              </a>
+              <div class="dropdown-menu bg-dark" aria-labelledby="navbarProduct">
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item bg-transparent" href="../alerts/superflow.html">
+    
+                    <!-- Icon -->
+                    <span class="fe fe-activity text-primary"></span>
+    
+                    <!-- Content -->
+                    <div class="ms-4">
+    
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase mb-0">
+                        SuperFlow
+                      </h6>
+    
+                    </div>
+    
+                  </a>
+    
+                  <a class="list-group-item bg-transparent" href="../alerts/overbought-oversold.html">
+    
+                    <!-- Icon -->
+                    <span class="fe fe-arrow-up text-primary"></span>
+    
+                    <!-- Content -->
+                    <div class="ms-4">
+    
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase mb-0">
+                        Overbought/Oversold
+                      </h6>
+    
+                    </div>
+    
+                  </a>
+    
+                  <a class="list-group-item bg-transparent" href="../alerts/pennant-flag.html">
+    
+                    <!-- Icon -->
+                    <span class="fe fe-play text-primary"></span>
+    
+                    <!-- Content -->
+                    <div class="ms-4">
+    
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase mb-0">
+                        Pennant Flag
+                      </h6>
+    
+                    </div>
+    
+                  </a>
+    
+                  <a class="list-group-item bg-transparent" href="../alerts/rsi-cross.html">
+    
+                    <!-- Icon -->
+                    <span class="fe fe-corner-right-up text-primary"></span>
+    
+                    <!-- Content -->
+                    <div class="ms-4">
+    
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase mb-0">
+                        RSI Cross
+                      </h6>
+    
+                    </div>
+    
+                  </a>
+    
+                  <a class="list-group-item bg-transparent" href="../alerts/price-shear.html">
+    
+                    <!-- Icon -->
+                    <span class="fe fe-trending-up text-primary"></span>
+    
+                    <!-- Content -->
+                    <div class="ms-4">
+    
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase mb-0">
+                        Price Shear
+                      </h6>
+    
+                    </div>
+    
+                  </a>
+    
+                  <a class="list-group-item bg-transparent" href="../alerts/volume-breakout.html">
+    
+                    <!-- Icon -->
+                    <span class="fe fe-chevrons-up text-primary"></span>
+    
+                    <!-- Content -->
+                    <div class="ms-4">
+    
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase mb-0">
+                        Volume + Breakout
+                      </h6>
+    
+                    </div>
+    
+                  </a>
+    
+                  <a class="list-group-item bg-transparent" href="../alerts/inside-bar-break.html">
+    
+                    <!-- Icon -->
+                    <span class="fe fe-arrow-up-right text-primary"></span>
+    
+                    <!-- Content -->
+                    <div class="ms-4">
+    
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase mb-0">
+                        Inside Bar Break
+                      </h6>
+    
+                    </div>
+    
+                  </a>
+    
+                  <a class="list-group-item bg-transparent" href="../alerts/golden-death-cross.html">
+    
+                    <!-- Icon -->
+                    <span class="fe fe-shuffle text-primary"></span>
+    
+                    <!-- Content -->
+                    <div class="ms-4">
+    
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase mb-0">
+                        Golden/Death Cross
+                      </h6>
+    
+                    </div>
+    
+                  </a>
+    
+                  <a class="list-group-item bg-transparent" href="../alerts/macd-cross.html">
+    
+                    <!-- Icon -->
+                    <span class="fe fe-shuffle text-primary"></span>
+    
+                    <!-- Content -->
+                    <div class="ms-4">
+    
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase mb-0">
+                        MACD Cross
+                      </h6>
+    
+                    </div>
+    
+                  </a>
+    
+                  <a class="list-group-item bg-transparent" href="../alerts/ema-cross.html">
+    
+                    <!-- Icon -->
+                    <span class="fe fe-shuffle text-primary"></span>
+    
+                    <!-- Content -->
+                    <div class="ms-4">
+    
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase mb-0">
+                        EMA Cross
+                      </h6>
+    
+                    </div>
+    
+                  </a>
+    
+                  <a class="list-group-item bg-transparent" href="../alerts/abnormal-volume.html">
+    
+                    <!-- Icon -->
+                    <span class="fe fe-bar-chart text-primary"></span>
+    
+                    <!-- Content -->
+                    <div class="ms-4">
+    
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase mb-0">
+                        Abnormal Volume
+                      </h6>
+    
+                    </div>
+    
+                  </a>
+                </div>
+              </div>
             </li>
     
             <li class="nav-item">
@@ -76,7 +268,7 @@
     </nav>
 
     <!-- BREADCRUMB -->
-    <nav class="bg-dark d-md-none">
+    <nav class="d-md-none">
       <div class="container-md">
         <div class="row align-items-center">
           <div class="col">
@@ -121,10 +313,10 @@
               EMA Cross
             </h1>
 
-            <!-- Text -->
-            <p class="fs-lg text-white-75 mb-0">
-              Get alerted when RSI crosses below 30 or above 70.
-            </p>
+            <!-- Pretitle -->
+            <h6 class="text-uppercase text-primary mb-6">
+              Basic alert
+            </h6>
 
           </div>
         </div> <!-- / .row -->
@@ -137,10 +329,10 @@
         <div class="row">
 
           <!-- Left Nav -->
-          <div class="col-12 col-md-3">
+          <div class="col-12 col-md-4 left-nav">
           
             <!-- Card -->
-            <div class="card card-bleed border-bottom border-bottom-md-0 bg-dark shadow-light-lg">
+            <div class="card card-bleed bg-dark shadow-dark-lg">
           
               <!-- Collapse -->
               <div class="collapse d-md-block" id="sidenavCollapse">
@@ -153,18 +345,21 @@
           
                   <!-- List -->
                   <ul class="card-list list text-gray-700 mb-6">
-                    <li class="list-item active">
+                    <li class="list-item">
                       <a class="list-link text-reset" href="../alerts/superflow.html">
+                        <span class="fe fe-activity text-primary me-2"></span>
                         SuperFlow
                       </a>
                     </li>
                     <li class="list-item">
                       <a class="list-link text-reset" href="../alerts/overbought-oversold.html">
+                        <span class="fe fe-arrow-up text-primary me-2"></span>
                         Overbought/Oversold
                       </a>
                     </li>
                     <li class="list-item">
                       <a class="list-link text-reset" href="../alerts/pennant-flag.html">
+                        <span class="fe fe-play text-primary me-2"></span>
                         Pennant Flag
                       </a>
                     </li>
@@ -179,21 +374,25 @@
                   <ul class="card-list list text-gray-700 mb-6">
                     <li class="list-item">
                       <a class="list-link text-reset" href="../alerts/rsi-cross.html">
+                        <span class="fe fe-shuffle text-primary me-2"></span>
                         RSI Cross
                       </a>
                     </li>
                     <li class="list-item">
                       <a class="list-link text-reset" href="../alerts/price-shear.html">
+                        <span class="fe fe-trending-up text-primary me-2"></span>
                         Price Shear
                       </a>
                     </li>
                     <li class="list-item">
                       <a class="list-link text-reset" href="../alerts/volume-breakout.html">
+                        <span class="fe fe-chevrons-up text-primary me-2"></span>
                         Volume + Breakout
                       </a>
                     </li>
                     <li class="list-item">
                       <a class="list-link text-reset" href="../alerts/inside-bar-break.html">
+                        <span class="fe fe-arrow-up-right text-primary me-2"></span>
                         Inside Bar Break
                       </a>
                     </li>
@@ -208,21 +407,25 @@
                   <ul class="card-list list text-gray-700 mb-0">
                     <li class="list-item">
                       <a class="list-link text-reset" href="../alerts/golden-death-cross.html">
+                        <span class="fe fe-shuffle text-primary me-2"></span>
                         Golden/Death Cross
                       </a>
                     </li>
                     <li class="list-item">
                       <a class="list-link text-reset" href="../alerts/macd-cross.html">
+                        <span class="fe fe-shuffle text-primary me-2"></span>
                         MACD Cross
                       </a>
                     </li>
                     <li class="list-item">
                       <a class="list-link text-reset" href="../alerts/ema-cross.html">
+                        <span class="fe fe-shuffle text-primary me-2"></span>
                         EMA Cross
                       </a>
                     </li>
                     <li class="list-item">
                       <a class="list-link text-reset" href="../alerts/abnormal-volume.html">
+                        <span class="fe fe-bar-chart text-primary me-2"></span>
                         Abnormal Volume
                       </a>
                     </li>
@@ -234,18 +437,36 @@
             </div>
           
           </div>
+          <script type="text/javascript">
+            $( '.left-nav .list-item a' ).on( 'click', function () {
+          	  $( '.left-nav .list-item' ).find( 'li.active' ).removeClass( 'active' );
+          	$( this ).parent( 'li' ).addClass( 'active' );
+          });
+          </script>
 
           <!-- Content-->
-          <div class="col-12 col-md-9">
+          <div class="col-12 col-md-8">
 
             <!-- Card -->
             <div class="card card-bleed shadow-light-lg bg-dark mb-6">
               <div class="card-header">
 
-                <!-- Heading -->
-                <h4 class="mb-0">
-                  About EMA Cross
-                </h4>
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Heading -->
+                    <h4 class="mb-0">
+                      About EMA Cross
+                    </h4>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Icon -->
+                    <span class="fe fe-shuffle text-primary"></span>
+
+                  </div>
+                </div>
 
               </div>
               <div class="card-body">
@@ -504,7 +725,7 @@
             <!-- List -->
             <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
               <li class="mb-3">
-                <a href="../alerts.html" class="text-reset">
+                <a href="../alerts/superflow.html" class="text-reset">
                   Alerts
                 </a>
               </li>
@@ -595,7 +816,7 @@
         </div> <!-- / .row -->
         <div class="row mt-6">
           <div class="col-12">
-            <small class="text-gray-700">
+            <small class="text-gray-900">
               Any advisory or signal generated by Coinflow LLC or any of its products is provided for educational purposes only. Any trades placed upon reliance on Coinflow systems are taken at your own risk for your own account. Past performance is no guarantee of future results. While there is great potential for reward trading securities and options there is also substantial risk of loss in all trading. You must decide your own suitability to trade. Future trading results can never be guaranteed. This is not an offer to buy or sell futures, options or commodity interests. Coinflow LLC is not registered as an investment adviser with any federal or state regulatory agency. The information contained within this website, including e-mail transmissions, faxes, recorded voice messages, and any other associated messages or media (hereinafter collectively referred to as “Information”) is provided for informational and educational purposes only. The Information should not be construed as investment / trading advice and is not meant to be a solicitation or recommendation to buy, sell, or hold any securities mentioned.
             </small>
           </div>
