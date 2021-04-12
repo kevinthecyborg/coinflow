@@ -96,11 +96,20 @@ footer img.footer-brand {
 .form-control:active.bg-black,
 .form-control:focus.bg-black,
 .form-control:active.bg-dark,
-.form-control:focus.bg-dark {
+.form-control:focus.bg-dark,
+.form-control:active.bg-dark-transparent-75,
+.form-control:focus.bg-dark-transparent-75 {
   border-color: $primary;
 }
 .form-control.bg-dark {
   border-color: #111;
+}
+.form-control.bg-dark-transparent-75 {
+  border-color: $gray-900;
+}
+.form-control:active.bg-dark-transparent-75,
+.form-control:focus.bg-dark-transparent-75 {
+  background-color: rgba(3,6,14,0.75);
 }
 
 
