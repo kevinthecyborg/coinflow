@@ -128,6 +128,7 @@ footer img.footer-brand {
 
 
 // RESPONSIVE
+// Up to desktop
 @media (max-width: 991.98px) {
   .navbar-collapse,
   .list-group-item.bg-transparent {
@@ -135,5 +136,12 @@ footer img.footer-brand {
   }
   .navbar-collapse .navbar-nav .nav-item + .nav-item {
     border-top: none;
+  }
+}
+
+// Mobile
+@media (max-width: 769px) {
+  .mt-m-3 {
+    margin-top: 0.75rem !important;
   }
 }
